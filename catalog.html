@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+	  <meta charset="utf-8">
+	  <title>Техномарт</title>
+	</head>
+	<body>
+	<!--Начало шапки сайта-->
+		<header class="main-header">
+			<div class="container">
+				<!--Верхний блок шапки-->
+				<section class="main-header-top">
+					<div class="header-logo">
+						<a href="#"><img src="http://placehold.it/220x47" alt="logo"></a>
+					</div>
+					<!--Поле поиска-->
+					<section class="header-search">
+						<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+							<label>Поиск:<input type="text" name="search"></label>
+							<button type="submit">Поиск</button>
+						</form>
+					</section>
+					<!--Пользовательский блок-->
+					<section class="userblock">
+						<div class="user-bookmarks">
+							<p>Закладки:</p>
+						</div>
+						<div class="user-basket">
+							<p>Корзина:</p>
+						</div>
+						<a href="">Оформить заказ</a>
+					</section>
+				</section>
+				<!--Средний блок шапки-->
+				<section class="main-header-middle">
+					<!--Блок описания сайта-->
+					<section class="site-description">
+						<p>Интернет-магазин<br>
+						 строительных материалов<br>
+						 и инструментов для ремонта</p>
+					</section>
+					<!--Блок контакты-->
+					<section class="contacts">
+						<div class="contacts-tel">
+							<p>+7 (812) 555-05-55</p>
+						</div>
+						<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+					</section>
+					<!--Блок регистрации пользователя-->
+					<section class="user-login">
+						<a href="#" class="foto">Foto</a>
+						<a href="#" class="name">Равшан Джамшутович</a>
+						<a href="#" class="exit">Exit</a>
+						<a href="#" class="My-order">Мои заказы</a>
+						<a href="#" class="personal-area">Личный кабинет</a>
+					</section>
+				</section>
+				<!--Нижний блок шапки-->
+				<section class="main-header-bottom">
+					<!--Меню навигации сайта-->
+					<nav class="main-menu">
+						<ul>
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">Компания</a></li>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Спецпредложения</a></li>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+				</section>
+			</div>
+		</header>
+		<!--Конец шапки сайта-->
+		<!--Основной блок сайта-->
+		<main>
+			<div class="container">
+				<!--Меню навигации "Хлебные крошки"-->
+				<nav class="breadcrumbs">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Каталог</a></li>
+						<li><a href="#">Инструмент</a></li>
+						<li>Перфораторы</li>
+					</ul>
+				</nav>
+				<h2>Перфораторы</h2>
+				<!--Сайдбар с фильтром каталога-->
+				<section class="catalog-sidebar">
+					<form action="https://echo.htmlacademy.ru" class="form-filter">
+						<span>Цена</span>
+						<input type="range" min="0" max="30000" step="1">
+						<span>Производители:</span>
+						<label><input type="checkbox" name="bosch">Bosch</label>
+						<label><input type="checkbox" name="interscol">Интерскол</label>
+						<label><input type="checkbox" name="makita">Makita</label>
+						<label><input type="checkbox" name="dewalt">Dewalt</label>
+						<label><input type="checkbox" name="hitachi">Hitachi</label>
+						<span>Питание:</span>
+						<label><input type="radio" name="power">Аккумуляторные</label>
+						<label><input type="radio" name="power">Сетевые</label>
+						<button type="submit">Показать</button>
+					</form>
+				</section>
+				<!--Каталог товаров-->
+				<section class="catalog">
+					<!--Блок сортировки каталога-->
+					<section class="catalog-sorting">
+						<span>Сортировка:</span>
+						<ul>
+							<li><a href="#">По цене</a></li>
+							<li><a href="#">По типу</a></li>
+							<li><a href="#">По функционалу</a></li>
+						</ul>
+						<button type="button" style="btn catalog-prev"></button>
+						<button type="button" style="btn catalog-next"></button>
+					</section>
+					<section class="catalog-content">
+						<ul>
+							<li><img src="http://placehold.it/220x318" alt="catalog-product"></li>
+							<li><img src="http://placehold.it/220x318" alt="catalog-product"></li>
+							<li><img src="http://placehold.it/220x318" alt="catalog-product"></li>
+							<li><img src="http://placehold.it/220x318" alt="catalog-product"></li>
+							<li><img src="http://placehold.it/220x318" alt="catalog-product"></li>
+							<li><img src="http://placehold.it/220x318" alt="catalog-product"></li>
+							<li><img src="http://placehold.it/220x318" alt="catalog-product"></li>
+							<li><img src="http://placehold.it/220x318" alt="catalog-product"></li>
+							<li><img src="http://placehold.it/220x318" alt="catalog-product"></li>
+						</ul>
+					</section>
+					<section class="catalog-pagination">
+						<ul>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">Следующая</a></li>
+						</ul>
+					</section>
+				</section>
+				<section class="list-description">
+					<h2>Пара слов о перфораторах</h2>
+					<p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+					Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+				</section>				
+			</div>
+		</main>
+		<!--Конец основного блока-->
+		<!--Подвал сайта-->
+		<footer class="main-footer">
+			<div class="container">
+				<!--Верхняя секция подвала-->
+				<section class="footer-top">
+					<div class="footer-logo">
+						<a href="#"><img src="http://placehold.it/220x68" alt="footer-logo"></a>
+					</div>
+					<!--Контакты-->
+					<section class="footer-contacts">
+						<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+						+7 (812) 555-05-55
+						</p>
+					</section>
+					<!--Меню навигации-->
+					<nav class="footer-menu">
+						<ul>
+							<li><a href="#">Компания</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+					<!--"Хлебные крошки"-->
+					<nav class="breadcrumbs">
+						<ul>
+							<li><a href="#">Материалы</a></li>
+							<li><a href="#">Техника</a></li>
+							<li><a href="#">Инструмент</a></li>
+							<li><a href="#">Спецпредложения</a></li>
+						</ul>
+					</nav>
+				</section>
+				<!--Нижняя секция подвала-->
+				<section class="footer-bottom">
+					<!--Копирайт компании-->
+					<section class="copyright">
+						<p>© 2010–2017 Компания «Техномарт»<br>
+						Все права защищены</p>
+					</section>
+					<!--Блок иконок соцсетей-->
+					<section class="footer-social">
+						<ul>
+							<li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
+							<li><a class="social-btn social-btn-fb" href="#">Фэйсбук</a></li>
+							<li><a class="social-btn social-btn-inst" href="#">Инстаграм</a></li>
+						</ul>
+					</section>
+					<!--Обратная связь-->
+					<section class="feedback">
+						<p>Обратная связь:</p>
+						<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+					</section>
+					<!--Копирайт компании разработчика сайта-->
+					<section class="copyright-developer">
+						<p>Разработано-</p>
+						<a href="https://htmlacademy.ru">htmlacademy.ru</a>
+					</section>
+				</section>
+			</div>	
+		</footer>
+	</body>
+</html>

@@ -1,12 +1,238 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Техномарт</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
-  </body>
+	<head>
+	  <meta charset="utf-8">
+	  <title>Техномарт</title>
+	</head>
+	<body>
+	<!--Начало шапки сайта-->
+		<header class="main-header">
+			<div class="container">
+				<!--Верхний блок шапки-->
+				<section class="main-header-top">
+					<div class="header-logo">
+						<a href="#"><img src="http://placehold.it/220x47" alt="logo"></a>
+					</div>
+					<!--Поле поиска-->
+					<section class="header-search">
+						<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+							<label>Поиск:<input type="text" name="search"></label>
+							<button type="submit">Поиск</button>
+						</form>
+					</section>
+					<!--Пользовательский блок-->
+					<section class="userblock">
+						<div class="user-bookmarks">
+							<p>Закладки:</p>
+						</div>
+						<div class="user-basket">
+							<p>Корзина:</p>
+						</div>
+						<a href="">Оформить заказ</a>
+					</section>
+				</section>
+				<!--Средний блок шапки-->
+				<section class="main-header-middle">
+					<!--Блок описания сайта-->
+					<section class="site-description">
+						<p>Интернет-магазин<br>
+						 строительных материалов<br>
+						 и инструментов для ремонта</p>
+					</section>
+					<!--Блок контакты-->
+					<section class="contacts">
+						<div class="contacts-tel">
+							<p>+7 (812) 555-05-55</p>
+						</div>
+						<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+					</section>
+					<!--Блок регистрации пользователя-->
+					<section class="user-autorization">
+						<a href="#">Войти</a>
+						<a href="#">Регистрация</a>
+					</section>
+				</section>
+				<!--Нижний блок шапки-->
+				<section class="main-header-bottom">
+					<!--Меню навигации сайта-->
+					<nav class="main-menu">
+						<ul>
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">Компания</a></li>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Спецпредложения</a></li>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+				</section>
+			</div>
+		</header>
+		<!--Конец шапки сайта-->
+		<main>
+			<div class="container">
+				<!--Промоблок сайта-->
+				<article class="main-promoblock">
+					<div class="promoblock-item">
+						<img src="http://placehold.it/300x123" alt="promo-item">
+						<a href="#">На любой вкус</a>
+					</div>
+					<div class="promoblock-item">
+						<img src="http://placehold.it/300x123" alt="promo-item">
+						<a href="#">На все случаи</a>
+					</div>
+					<div class="promoblock-item">
+						<img src="http://placehold.it/300x123" alt="promo-item">
+						<a href="#">Для стройки</a>
+					</div>
+					<div class="promoblock-item">
+						<img src="http://placehold.it/300x123" alt="promo-item">
+						<a href="#">На 350 товаров</a>
+					</div>
+					<div class="promoblock-item">
+						<img src="http://placehold.it/300x123" alt="promo-item">
+						<a href="#">Бесплатно</a>
+					</div>
+					<!--Галерея товаров Промоблока-->
+					<section class="promo-galery">
+						<figure class="galery-content">
+							<img src="http://placehold.it/620x266" alt="galery-img">
+						</figure>
+						<a href="#">Открыть каталог</a>
+						<button class="galery-prev" type="button">prev</button>
+						<button class="galery-next" type="button">next</button>
+					</section>
+				</article>
+				<!--Блок "Популярные товары"-->
+				<article class="popular-products">
+					<h2>Популярные товары:</h2>
+					<a href="#">Все популярные товары</a>
+					<ul>
+						<li><img src="http://placehold.it/220x318" alt="popular-products"></li>
+						<li><img src="http://placehold.it/220x318" alt="popular-products"></li>
+						<li><img src="http://placehold.it/220x318" alt="popular-products"></li>
+						<li><img src="http://placehold.it/220x318" alt="popular-products"></li>
+					</ul>
+				</article>
+				<!--Блок "Популярные производители"-->
+				<article class="popular-brand">
+					<h2>Популярные производители:</h2>
+					<a href="#">Все производители</a>
+					<ul>
+						<li><a href="#"><img src="http://placehold.it/220x145" alt="popular-brand"></a></li>
+						<li><a href="#"><img src="http://placehold.it/220x145" alt="popular-brand"></a></li>
+						<li><a href="#"><img src="http://placehold.it/220x145" alt="popular-brand"></a></li>
+						<li><a href="#"><img src="http://placehold.it/220x145" alt="popular-brand"></a></li>
+						<li><a href="#"><img src="http://placehold.it/220x145" alt="popular-brand"></a></li>
+						<li><a href="#"><img src="http://placehold.it/220x145" alt="popular-brand"></a></li>
+						<li><a href="#"><img src="http://placehold.it/220x145" alt="popular-brand"></a></li>
+						<li><a href="#"><img src="http://placehold.it/220x145" alt="popular-brand"></a></li>
+					</ul>
+				</article>
+				<!--Блок "Сервис"-->
+				<section class="main-services">
+					<section class="services">
+						<h2>Сервисы</h2>
+						<p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
+						Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+					</section>
+					<!--Галерея Блока "Сервис"-->
+					<section class="services-galery">
+						<figure class="services-galery-item">
+							<img src="http://placehold.it/619x282" alt="services-galery-img">
+						</figure>
+						<ul>
+							<li><button class="galery-switch" type="button">Доставка</button></li>
+							<li><button class="galery-switch" type="button">Гарантия</button></li>
+							<li><button class="galery-switch" type="button">Кредит</button></li>
+						</ul>
+					</section>
+				</section>
+				<!--Блок описания и местоположения компании-->
+				<section class="description-company">
+					<h2>Компания «Техномарт»</h2>
+					<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br> строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
+					<p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+					Техномарт работает со многими транспортными компаниями: </p>
+					<ul>
+						<li>Деловые линии</li>
+						<li>Автотрейдинг</li>
+						<li>ЖелДорЭкспедиция</li>
+					</ul>
+					<a href="#">Подробнее о компании</a>
+				</section>
+				<section class="geolocation-company">
+					<h2>Контакты</h2>
+					<p>Вы можете забрать товар сами,<br>
+					заехав в наш офис:</p>
+					<a href=""><img src="http://placehold.it/300x158" alt="map"></a>
+					<a href="#">Заблудились? Напишите нам!</a>
+				</section>
+			</div>
+		</main>
+		<!--Конец основного блока-->
+		<!--Подвал сайта-->
+		<footer class="main-footer">
+			<div class="container">
+				<!--Верхняя секция подвала-->
+				<section class="footer-top">
+					<div class="footer-logo">
+						<a href="#"><img src="http://placehold.it/220x68" alt="footer-logo"></a>
+					</div>
+					<!--Контакты-->
+					<section class="footer-contacts">
+						<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+						+7 (812) 555-05-55
+						</p>
+					</section>
+					<!--Меню навигации-->
+					<nav class="footer-menu">
+						<ul>
+							<li><a href="#">Компания</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+					<!--"Хлебные крошки"-->
+					<nav class="breadcrumbs">
+						<ul>
+							<li><a href="#">Материалы</a></li>
+							<li><a href="#">Техника</a></li>
+							<li><a href="#">Инструмент</a></li>
+							<li><a href="#">Спецпредложения</a></li>
+						</ul>
+					</nav>
+				</section>
+				<!--Нижняя секция подвала-->
+				<section class="footer-bottom">
+					<!--Копирайт компании-->
+					<section class="copyright">
+						<p>© 2010–2017 Компания «Техномарт»<br>
+						Все права защищены</p>
+					</section>
+					<!--Блок иконок соцсетей-->
+					<section class="footer-social">
+						<ul>
+							<li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
+							<li><a class="social-btn social-btn-fb" href="#">Фэйсбук</a></li>
+							<li><a class="social-btn social-btn-inst" href="#">Инстаграм</a></li>
+						</ul>
+					</section>
+					<!--Обратная связь-->
+					<section class="feedback">
+						<p>Обратная связь:</p>
+						<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+					</section>
+					<!--Копирайт компании разработчика сайта-->
+					<section class="copyright-developer">
+						<p>Разработано-</p>
+						<a href="https://htmlacademy.ru">htmlacademy.ru</a>
+					</section>
+				</section>
+			</div>	
+		</footer>
+	</body>
 </html>
