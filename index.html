@@ -7,9 +7,9 @@
 	<body>
 	<!--Начало шапки сайта-->
 		<header class="main-header">
-			<div class="container">
-				<!--Верхний блок шапки-->
-				<section class="main-header-top">
+			<!--Верхний блок шапки-->
+			<section class="main-header-top">
+				<div class="container">
 					<div class="header-logo">
 						<a href="#"><img src="http://placehold.it/220x47" alt="logo"></a>
 					</div>
@@ -22,15 +22,14 @@
 					</section>
 					<!--Пользовательский блок-->
 					<section class="userblock">
-						<div class="user-bookmarks">
-							<p>Закладки:</p>
-						</div>
-						<div class="user-basket">
-							<p>Корзина:</p>
-						</div>
-						<a href="">Оформить заказ</a>
+						<a href="#" class="user-bookmarks">Закладки:</a>
+						<a href="#" class="user-basket">Корзина:</a>
+						<a href="#" class="checkout">Оформить заказ</a>
 					</section>
-				</section>
+				</div>
+			</section>
+			<!--Центровочный блок средней и нижней секций шапки-->
+			<div class="container">
 				<!--Средний блок шапки-->
 				<section class="main-header-middle">
 					<!--Блок описания сайта-->
@@ -72,33 +71,38 @@
 		<!--Конец шапки сайта-->
 		<main>
 			<div class="container">
-				<!--Промоблок сайта-->
+				<!--Промоблок сайта-слайдер-->
 				<article class="main-promoblock">
-					<div class="promoblock-item">
+					<section class="promoblock-item">
 						<img src="http://placehold.it/300x123" alt="promo-item">
 						<a href="#">На любой вкус</a>
-					</div>
-					<div class="promoblock-item">
+					</section>
+					<section class="promoblock-item">
 						<img src="http://placehold.it/300x123" alt="promo-item">
 						<a href="#">На все случаи</a>
-					</div>
-					<div class="promoblock-item">
+					</section>
+					<section class="promoblock-item">
 						<img src="http://placehold.it/300x123" alt="promo-item">
 						<a href="#">Для стройки</a>
-					</div>
-					<div class="promoblock-item">
+					</section>
+					<section class="promoblock-item">
 						<img src="http://placehold.it/300x123" alt="promo-item">
 						<a href="#">На 350 товаров</a>
-					</div>
-					<div class="promoblock-item">
+					</section>
+					<section class="promoblock-item">
 						<img src="http://placehold.it/300x123" alt="promo-item">
 						<a href="#">Бесплатно</a>
-					</div>
-					<!--Галерея товаров Промоблока-->
-					<section class="promo-galery">
-						<figure class="galery-content">
-							<img src="http://placehold.it/620x266" alt="galery-img">
-						</figure>
+					</section>
+					<!--Первая картинка слайдера-->
+					<section class="promoblock-item promoblock-item-big">
+						<img src="http://placehold.it/620x266" alt="promo-item-big">
+						<a href="#">Открыть каталог</a>
+						<button class="galery-prev" type="button">prev</button>
+						<button class="galery-next" type="button">next</button>
+					</section>
+					<!--Вторая картинка слайдера-->
+					<section class="promoblock-item promoblock-item-big">
+						<img src="http://placehold.it/620x266" alt="promo-item-big">
 						<a href="#">Открыть каталог</a>
 						<button class="galery-prev" type="button">prev</button>
 						<button class="galery-next" type="button">next</button>
@@ -106,19 +110,40 @@
 				</article>
 				<!--Блок "Популярные товары"-->
 				<article class="popular-products">
-					<h2>Популярные товары:</h2>
-					<a href="#">Все популярные товары</a>
-					<ul>
-						<li><img src="http://placehold.it/220x318" alt="popular-products"></li>
-						<li><img src="http://placehold.it/220x318" alt="popular-products"></li>
-						<li><img src="http://placehold.it/220x318" alt="popular-products"></li>
-						<li><img src="http://placehold.it/220x318" alt="popular-products"></li>
-					</ul>
+					<div class="product-header">
+						<h2>Популярные товары:</h2>
+						<a href="#">Все популярные товары</a>
+					</div>
+					<article class="popular-products-item">
+						<img src="http://placehold.it/184x164" alt="">
+						<h3>Перфоратор BOSCH BFG 9000</h3>
+						<span class="old-price">32500 Р.</span>
+						<span class="new-price">25500 Р.</span>
+					</article>
+					<article class="popular-products-item">
+						<img src="http://placehold.it/184x164" alt="popular-product">
+						<h3>Перфоратор BOSCH BFG 3000</h3>
+						<span class="old-price">22500 Р.</span>
+						<span class="new-price">15500 Р.</span>
+					</article>	
+					<article class="popular-products-item">
+						<img src="http://placehold.it/184x164" alt="popular-product">
+						<h3>Перфоратор BOSCH BFG 6000</h3>
+						<span class="old-price">30500 Р.</span>
+						<span class="new-price">25500 Р.</span>
+					</article>	
+					<article class="popular-products-item">
+						<img src="http://placehold.it/184x164" alt="popular-product">
+						<h3>Перфоратор BOSCH BFG 2000</h3>
+						<span class="new-price">12500 Р.</span>
+					</article>		
 				</article>
 				<!--Блок "Популярные производители"-->
 				<article class="popular-brand">
-					<h2>Популярные производители:</h2>
-					<a href="#">Все производители</a>
+					<div class="brand-header">
+						<h2>Популярные производители:</h2>
+						<a href="#">Все производители</a>
+					</div>
 					<ul>
 						<li><a href="#"><img src="http://placehold.it/220x145" alt="popular-brand"></a></li>
 						<li><a href="#"><img src="http://placehold.it/220x145" alt="popular-brand"></a></li>
@@ -131,24 +156,39 @@
 					</ul>
 				</article>
 				<!--Блок "Сервис"-->
-				<section class="main-services">
-					<section class="services">
+				<article class="main-services">
+					<section class="services-slogan">
 						<h2>Сервисы</h2>
 						<p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
 						Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 					</section>
 					<!--Галерея Блока "Сервис"-->
 					<section class="services-galery">
-						<figure class="services-galery-item">
-							<img src="http://placehold.it/619x282" alt="services-galery-img">
-						</figure>
 						<ul>
-							<li><button class="galery-switch" type="button">Доставка</button></li>
-							<li><button class="galery-switch" type="button">Гарантия</button></li>
-							<li><button class="galery-switch" type="button">Кредит</button></li>
+							<li><a href="#" class="galery-switch">Доставка</a></li>
+							<li><a href="#" class="galery-switch">Гарантия</a></li>
+							<li><a href="#" class="galery-switch">Кредит</a></li>
 						</ul>
+						<section class="galery-content delivery">
+							<h3>Доставка</h3>
+							<p>Мы с удовольствием доставим ваш товар прямо 
+							к вашему подъезду совершенно бесплатно!
+							Ведь мы неплохо заработаем, 
+							поднимая его на ваш этаж!</p>
+						</section>
+						<section class="galery-content guarantee">
+							<h3>Гарантия</h3>
+							<p>Если купленный у нас товар поломается или заискрит, 
+							а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
+							Дом уж восстановите как-нибудь сами.</p>
+						</section>
+						<section class="galery-content credit">
+							<h3>Кредит</h3>
+							<p>Залезть в долговую яму стало проще! 
+							Кредитные консультанты придут вам на помощь.</p>
+						</section>
 					</section>
-				</section>
+				</article>
 				<!--Блок описания и местоположения компании-->
 				<section class="description-company">
 					<h2>Компания «Техномарт»</h2>
@@ -170,6 +210,25 @@
 					<a href="#">Заблудились? Напишите нам!</a>
 				</section>
 			</div>
+			<!--Модальное окно: Напишите нам-->
+			<article class="write-us">
+				<!--Кнопка-крестик закрытия окна-->
+				<a href="#" class="btn-close">close</a>
+				<div class="container">
+					<form action="https://echo.htmlacademy.ru" method="post">
+						<label>Ваше имя:
+							<input type="text" name="name" placeholder="Представьтесь, пожалуйста">
+						</label>
+						<label>Ваш email:
+							<input type="email" name="email" placeholder="Для отправки ответа">
+						</label>
+						<label>Текст письма:
+							<textarea name="letter" placeholder="В свободной форме"></textarea>
+						</label>
+						<button type="submit">Отправить</button>
+					</form>
+				</div>
+			</article>
 		</main>
 		<!--Конец основного блока-->
 		<!--Подвал сайта-->

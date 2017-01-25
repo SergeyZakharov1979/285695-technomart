@@ -7,9 +7,9 @@
 	<body>
 	<!--Начало шапки сайта-->
 		<header class="main-header">
-			<div class="container">
-				<!--Верхний блок шапки-->
-				<section class="main-header-top">
+			<!--Верхний блок шапки-->
+			<section class="main-header-top">
+				<div class="container">
 					<div class="header-logo">
 						<a href="#"><img src="http://placehold.it/220x47" alt="logo"></a>
 					</div>
@@ -22,15 +22,14 @@
 					</section>
 					<!--Пользовательский блок-->
 					<section class="userblock">
-						<div class="user-bookmarks">
-							<p>Закладки:</p>
-						</div>
-						<div class="user-basket">
-							<p>Корзина:</p>
-						</div>
-						<a href="">Оформить заказ</a>
+						<a href="#" class="user-bookmarks">Закладки:</a>
+						<a href="#" class="user-cart">Корзина:</a>
+						<a href="#" class="checkout">Оформить заказ</a>
 					</section>
-				</section>
+				</div>
+			</section>
+			<!--Центровочный блок средней и нижней секций шапки-->
+			<div class="container">
 				<!--Средний блок шапки-->
 				<section class="main-header-middle">
 					<!--Блок описания сайта-->
@@ -89,17 +88,23 @@
 				<!--Сайдбар с фильтром каталога-->
 				<section class="catalog-sidebar">
 					<form action="https://echo.htmlacademy.ru" class="form-filter">
-						<span>Цена</span>
-						<input type="range" min="0" max="30000" step="1">
-						<span>Производители:</span>
-						<label><input type="checkbox" name="bosch">Bosch</label>
-						<label><input type="checkbox" name="interscol">Интерскол</label>
-						<label><input type="checkbox" name="makita">Makita</label>
-						<label><input type="checkbox" name="dewalt">Dewalt</label>
-						<label><input type="checkbox" name="hitachi">Hitachi</label>
-						<span>Питание:</span>
-						<label><input type="radio" name="power">Аккумуляторные</label>
-						<label><input type="radio" name="power">Сетевые</label>
+						<section class="prise-slide">
+							<h3>Цена</h3>
+							<input type="range" min="0" max="30000" step="1">
+						</section>
+						<section class="selection-brand">
+							<h3>Производители:</h3>
+							<label><input type="checkbox" name="bosch">Bosch</label>
+							<label><input type="checkbox" name="interscol">Интерскол</label>
+							<label><input type="checkbox" name="makita">Makita</label>
+							<label><input type="checkbox" name="dewalt">Dewalt</label>
+							<label><input type="checkbox" name="hitachi">Hitachi</label>
+						</section>
+						<section class="selection-power">
+							<h3>Питание:</h3>
+							<label><input type="radio" name="power">Аккумуляторные</label>
+							<label><input type="radio" name="power">Сетевые</label>
+						</section>
 						<button type="submit">Показать</button>
 					</form>
 				</section>
@@ -117,17 +122,58 @@
 						<button type="button" style="btn catalog-next"></button>
 					</section>
 					<section class="catalog-content">
-						<ul>
-							<li><img src="http://placehold.it/220x318" alt="catalog-product"></li>
-							<li><img src="http://placehold.it/220x318" alt="catalog-product"></li>
-							<li><img src="http://placehold.it/220x318" alt="catalog-product"></li>
-							<li><img src="http://placehold.it/220x318" alt="catalog-product"></li>
-							<li><img src="http://placehold.it/220x318" alt="catalog-product"></li>
-							<li><img src="http://placehold.it/220x318" alt="catalog-product"></li>
-							<li><img src="http://placehold.it/220x318" alt="catalog-product"></li>
-							<li><img src="http://placehold.it/220x318" alt="catalog-product"></li>
-							<li><img src="http://placehold.it/220x318" alt="catalog-product"></li>
-						</ul>
+						<article class="products-item">
+						<img src="http://placehold.it/184x164" alt="product">
+						<h3>Перфоратор BOSCH BFG 3000</h3>
+						<span class="old-price">22500 Р.</span>
+						<span class="new-price">15500 Р.</span>
+					</article>	
+					<article class="products-item">
+						<img src="http://placehold.it/184x164" alt="product">
+						<h3>Перфоратор BOSCH BFG 6000</h3>
+						<span class="old-price">30500 Р.</span>
+						<span class="new-price">25500 Р.</span>
+					</article>	
+					<article class="products-item">
+						<a href="#" class="buy">Купить</a>
+						<a href="#" class="to-bookmarks">В закладки</a>
+						<h3>Перфоратор BOSCH BFG 2000</h3>
+						<span class="new-price">12500 Р.</span>
+					</article>
+					<article class="products-item">
+						<img src="http://placehold.it/184x164" alt="product">
+						<h3>Перфоратор BOSCH BFG 3000</h3>
+						<span class="old-price">22500 Р.</span>
+						<span class="new-price">15500 Р.</span>
+					</article>	
+					<article class="products-item">
+						<img src="http://placehold.it/184x164" alt="product">
+						<h3>Перфоратор BOSCH BFG 6000</h3>
+						<span class="old-price">30500 Р.</span>
+						<span class="new-price">25500 Р.</span>
+					</article>	
+					<article class="products-item">
+						<img src="http://placehold.it/184x164" alt="product">
+						<h3>Перфоратор BOSCH BFG 2000</h3>
+						<span class="new-price">12500 Р.</span>
+					</article>
+					<article class="products-item">
+						<img src="http://placehold.it/184x164" alt="product">
+						<h3>Перфоратор BOSCH BFG 3000</h3>
+						<span class="old-price">22500 Р.</span>
+						<span class="new-price">15500 Р.</span>
+					</article>	
+					<article class="products-item">
+						<img src="http://placehold.it/184x164" alt="product">
+						<h3>Перфоратор BOSCH BFG 6000</h3>
+						<span class="old-price">30500 Р.</span>
+						<span class="new-price">25500 Р.</span>
+					</article>	
+					<article class="products-item">
+						<img src="http://placehold.it/184x164" alt="product">
+						<h3>Перфоратор BOSCH BFG 2000</h3>
+						<span class="new-price">12500 Р.</span>
+					</article>						
 					</section>
 					<section class="catalog-pagination">
 						<ul>
@@ -144,6 +190,13 @@
 					Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
 				</section>				
 			</div>
+			<!--Модальное окно: Товар добавлен в корзину-->
+			<section class="items-in-cart">
+				<a href="#" class="btn-close">close</a>
+				<p>Товар добавлен в корзину!</p>
+				<a href="#">Оформить заказ</a>
+				<a href="#">Продолжить покупки</a>
+			</section>
 		</main>
 		<!--Конец основного блока-->
 		<!--Подвал сайта-->
