@@ -3,6 +3,7 @@
 	<head>
 	  <meta charset="utf-8">
 	  <title>Техномарт</title>
+	  <link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 	<!--Начало шапки сайта-->
@@ -11,7 +12,7 @@
 			<section class="main-header-top">
 				<div class="container">
 					<div class="header-logo">
-						<a href="#"><img src="http://placehold.it/220x47" alt="logo"></a>
+						<a href="#"><img src="img/logo.png" width="220" height="47" alt="Техномарт"></a>
 					</div>
 					<!--Поле поиска-->
 					<section class="header-search">
@@ -85,6 +86,19 @@
 						<img src="http://placehold.it/300x123" alt="promo-item">
 						<a href="#">Для стройки</a>
 					</section>
+					<section class="slider">
+						<!--Первая картинка слайдера-->
+						<section class="promoblock-item promoblock-item-big">
+							<img src="img/slider-img-1.jpg" with="620" height="266" alt="promo-item-big">
+						</section>
+						<!--Вторая картинка слайдера-->
+						<section class="promoblock-item promoblock-item-big">
+							<img src="img/slider-img-2.jpg" with="620" height="266" alt="promo-item-big">
+						</section>
+						<a href="#">Открыть каталог</a>
+						<button class="galery-prev" type="button">prev</button>
+						<button class="galery-next" type="button">next</button>
+					</section>
 					<section class="promoblock-item">
 						<img src="http://placehold.it/300x123" alt="promo-item">
 						<a href="#">На 350 товаров</a>
@@ -93,20 +107,6 @@
 						<img src="http://placehold.it/300x123" alt="promo-item">
 						<a href="#">Бесплатно</a>
 					</section>
-					<!--Первая картинка слайдера-->
-					<section class="promoblock-item promoblock-item-big">
-						<img src="http://placehold.it/620x266" alt="promo-item-big">
-						<a href="#">Открыть каталог</a>
-						<button class="galery-prev" type="button">prev</button>
-						<button class="galery-next" type="button">next</button>
-					</section>
-					<!--Вторая картинка слайдера-->
-					<section class="promoblock-item promoblock-item-big">
-						<img src="http://placehold.it/620x266" alt="promo-item-big">
-						<a href="#">Открыть каталог</a>
-						<button class="galery-prev" type="button">prev</button>
-						<button class="galery-next" type="button">next</button>
-					</section>
 				</article>
 				<!--Блок "Популярные товары"-->
 				<article class="popular-products">
@@ -114,26 +114,34 @@
 						<h2>Популярные товары:</h2>
 						<a href="#">Все популярные товары</a>
 					</div>
-					<article class="popular-products-item">
-						<img src="http://placehold.it/184x164" alt="">
+					<article class="products-item">
+						<a href="#" class="buy">Купить</a>
+						<a href="#" class="to-bookmarks">В закладки</a>
+						<img src="img/perforator-BOSCH-BFG-9000.jpg" width="184" heigt="164" alt="popular-product">
 						<h3>Перфоратор BOSCH BFG 9000</h3>
 						<span class="old-price">32500 Р.</span>
 						<span class="new-price">25500 Р.</span>
 					</article>
-					<article class="popular-products-item">
-						<img src="http://placehold.it/184x164" alt="popular-product">
+					<article class="products-item">
+						<a href="#" class="buy">Купить</a>
+						<a href="#" class="to-bookmarks">В закладки</a>
+						<img src="img/perforator-BOSCH-BFG-3000.jpg" width="127" height="112" alt="popular-product">
 						<h3>Перфоратор BOSCH BFG 3000</h3>
 						<span class="old-price">22500 Р.</span>
 						<span class="new-price">15500 Р.</span>
 					</article>	
-					<article class="popular-products-item">
-						<img src="http://placehold.it/184x164" alt="popular-product">
+					<article class="products-item">
+						<a href="#" class="buy">Купить</a>
+						<a href="#" class="to-bookmarks">В закладки</a>
+						<img src="img/perforator-BOSCH-BFG-6000.jpg" width="144" height="128" alt="popular-product">
 						<h3>Перфоратор BOSCH BFG 6000</h3>
 						<span class="old-price">30500 Р.</span>
 						<span class="new-price">25500 Р.</span>
 					</article>	
-					<article class="popular-products-item">
-						<img src="http://placehold.it/184x164" alt="popular-product">
+					<article class="products-item">
+						<a href="#" class="buy">Купить</a>
+						<a href="#" class="to-bookmarks">В закладки</a>
+						<img src="img/perforator-BOSCH-BFG-2000.jpg" width="127" height="112" alt="popular-product">
 						<h3>Перфоратор BOSCH BFG 2000</h3>
 						<span class="new-price">12500 Р.</span>
 					</article>		
@@ -145,14 +153,14 @@
 						<a href="#">Все производители</a>
 					</div>
 					<ul>
-						<li><a href="#"><img src="http://placehold.it/220x145" alt="popular-brand"></a></li>
-						<li><a href="#"><img src="http://placehold.it/220x145" alt="popular-brand"></a></li>
-						<li><a href="#"><img src="http://placehold.it/220x145" alt="popular-brand"></a></li>
-						<li><a href="#"><img src="http://placehold.it/220x145" alt="popular-brand"></a></li>
-						<li><a href="#"><img src="http://placehold.it/220x145" alt="popular-brand"></a></li>
-						<li><a href="#"><img src="http://placehold.it/220x145" alt="popular-brand"></a></li>
-						<li><a href="#"><img src="http://placehold.it/220x145" alt="popular-brand"></a></li>
-						<li><a href="#"><img src="http://placehold.it/220x145" alt="popular-brand"></a></li>
+						<li><a href="#"><img src="img/bosch-brand.jpg" width="220" height="145" alt="popular-brand"></a></li>
+						<li><a href="#"><img src="img/makita-brand.jpg" width="220" height="145" alt="popular-brand"></a></li>
+						<li><a href="#"><img src="img/dewalt-brand.jpg" width="220" height="145" alt="popular-brand"></a></li>
+						<li><a href="#"><img src="img/interscol-brand.jpg" width="220" height="145" alt="popular-brand"></a></li>
+						<li><a href="#"><img src="img/hitachi-brand.jpg" width="220" height="145" alt="popular-brand"></a></li>
+						<li><a href="#"><img src="img/lg-brand.jpg" width="220" height="145" alt="popular-brand"></a></li>
+						<li><a href="#"><img src="img/aeg-brand.jpg" width="220" height="145" alt="popular-brand"></a></li>
+						<li><a href="#"><img src="img/metabol-brand.jpg" width="220" height="145" alt="popular-brand"></a></li>
 					</ul>
 				</article>
 				<!--Блок "Сервис"-->
@@ -206,7 +214,7 @@
 					<h2>Контакты</h2>
 					<p>Вы можете забрать товар сами,<br>
 					заехав в наш офис:</p>
-					<a href=""><img src="http://placehold.it/300x158" alt="map"></a>
+					<a href=""><img src="img/infomation-map.jpg" width="300" height="158" alt="map"></a>
 					<a href="#">Заблудились? Напишите нам!</a>
 				</section>
 			</div>
@@ -237,7 +245,7 @@
 				<!--Верхняя секция подвала-->
 				<section class="footer-top">
 					<div class="footer-logo">
-						<a href="#"><img src="http://placehold.it/220x68" alt="footer-logo"></a>
+						<a href="#"><img src="img/footer-logo.png" width="220" height="68" alt="Техномарт"></a>
 					</div>
 					<!--Контакты-->
 					<section class="footer-contacts">
@@ -246,7 +254,7 @@
 						</p>
 					</section>
 					<!--Меню навигации-->
-					<nav class="footer-menu">
+					<nav class="footer-menu-top">
 						<ul>
 							<li><a href="#">Компания</a></li>
 							<li><a href="#">Новости</a></li>
@@ -255,8 +263,8 @@
 							<li><a href="#">Контакты</a></li>
 						</ul>
 					</nav>
-					<!--"Хлебные крошки"-->
-					<nav class="breadcrumbs">
+					<!--"Меню нижнее"-->
+					<nav class="footer-menu-bottom">
 						<ul>
 							<li><a href="#">Материалы</a></li>
 							<li><a href="#">Техника</a></li>
