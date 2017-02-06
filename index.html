@@ -10,46 +10,48 @@
 		<header class="main-header">
 			<!--Верхний блок шапки-->
 			<section class="main-header-top">
-				<div class="container">
-					<div class="header-logo">
-						<a href="#"><img src="img/logo.png" width="220" height="47" alt="Техномарт"></a>
+				<div class="container clearfix">
+					<div class="header-logo left">
+						<a href="#">Техномарт</a>
 					</div>
 					<!--Поле поиска-->
-					<section class="header-search">
+					<section class="header-search left">
 						<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-							<label>Поиск:<input type="text" name="search"></label>
-							<button type="submit">Поиск</button>
+							<input type="image" src="img/icon-search.png" alt="search">
+							<input type="search" name="search" placeholder="Поиск:">
 						</form>
 					</section>
 					<!--Пользовательский блок-->
-					<section class="userblock">
-						<a href="#" class="user-bookmarks">Закладки:</a>
-						<a href="#" class="user-basket">Корзина:</a>
-						<a href="#" class="checkout">Оформить заказ</a>
+					<section class="userblock right">
+					<ul>
+						<li><a href="#" class="user-bookmarks">Закладки:</a></li>
+						<li><a href="#" class="user-basket">Корзина:</a></li>
+						<li><a href="#" class="checkout">Оформить заказ</a></li>
+					</ul>
 					</section>
 				</div>
 			</section>
 			<!--Центровочный блок средней и нижней секций шапки-->
-			<div class="container">
+			<div class="container clearfix">
 				<!--Средний блок шапки-->
 				<section class="main-header-middle">
 					<!--Блок описания сайта-->
-					<section class="site-description">
+					<section class="site-description left">
 						<p>Интернет-магазин<br>
 						 строительных материалов<br>
 						 и инструментов для ремонта</p>
 					</section>
 					<!--Блок контакты-->
-					<section class="contacts">
+					<section class="contacts left">
 						<div class="contacts-tel">
 							<p>+7 (812) 555-05-55</p>
 						</div>
 						<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 					</section>
-					<!--Блок регистрации пользователя-->
-					<section class="user-autorization">
+					<!--Блок авторизации ирегистрации пользователя-->
+					<section class="user-autorization right">
 						<a href="#">Войти</a>
-						<a href="#">Регистрация</a>
+						<a href="#" class="registration">Регистрация</a>
 					</section>
 				</section>
 				<!--Нижний блок шапки-->
@@ -75,82 +77,100 @@
 				<!--Промоблок сайта-слайдер-->
 				<article class="main-promoblock">
 					<section class="promoblock-item">
-						<img src="http://placehold.it/300x123" alt="promo-item">
+						<span>Материалы</span>
 						<a href="#">На любой вкус</a>
 					</section>
 					<section class="promoblock-item">
 						<img src="http://placehold.it/300x123" alt="promo-item">
+						<span>Инструмент</span>
 						<a href="#">На все случаи</a>
 					</section>
 					<section class="promoblock-item">
 						<img src="http://placehold.it/300x123" alt="promo-item">
+						<span>Техника</span>
 						<a href="#">Для стройки</a>
 					</section>
 					<section class="slider">
 						<!--Первая картинка слайдера-->
 						<section class="promoblock-item promoblock-item-big">
-							<img src="img/slider-img-1.jpg" with="620" height="266" alt="promo-item-big">
+							<img src="img/slider-img-1.jpg" width="620" height="266" alt="promo-item-big">
 						</section>
 						<!--Вторая картинка слайдера-->
-						<section class="promoblock-item promoblock-item-big">
+						<!--<section class="promoblock-item promoblock-item-big">
 							<img src="img/slider-img-2.jpg" with="620" height="266" alt="promo-item-big">
-						</section>
-						<a href="#">Открыть каталог</a>
-						<button class="galery-prev" type="button">prev</button>
-						<button class="galery-next" type="button">next</button>
+						</section>-->
 					</section>
 					<section class="promoblock-item">
 						<img src="http://placehold.it/300x123" alt="promo-item">
+						<span>Скидка 50%</span>
 						<a href="#">На 350 товаров</a>
 					</section>
 					<section class="promoblock-item">
 						<img src="http://placehold.it/300x123" alt="promo-item">
+						<span>Доставка</span>
 						<a href="#">Бесплатно</a>
 					</section>
+					<div class="promoblock-control">
+						<a href="#" class="btn">Открыть каталог</a>
+						<button type="button" class="galery-prev" name="prev" value="prev"><img src="img/slider-arrow-prev.png" alt="arrow"></button>
+						<button type="button" class="galery-next" name="next" value="next"><img src="img/slider-arrow-next.png" alt="arrow"></button>
+					</div>
 				</article>
 				<!--Блок "Популярные товары"-->
-				<article class="popular-products">
-					<div class="product-header">
+				<section class="products">
+					<section class="products-header">
 						<h2>Популярные товары:</h2>
-						<a href="#">Все популярные товары</a>
-					</div>
+						<a href="#" class="btn">Все популярные товары</a>
+					</section>
 					<article class="products-item">
-						<a href="#" class="buy">Купить</a>
-						<a href="#" class="to-bookmarks">В закладки</a>
-						<img src="img/perforator-BOSCH-BFG-9000.jpg" width="184" heigt="164" alt="popular-product">
-						<h3>Перфоратор BOSCH BFG 9000</h3>
-						<span class="old-price">32500 Р.</span>
+						<section class="products-pop-up">
+							<a href="#" class="buy">Купить</a>
+							<a href="#" class="to-bookmarks">В закладки</a>
+						</section>
+						<img src="img/perforator-BOSCH-BFG-9000.png" width="180" height="160" alt="popular-product">
+						<h3>Перфоратор BOSCH<br>
+						BFG 9000</h3>
+						<span class="old-price">32500 Р.</span><br>
 						<span class="new-price">25500 Р.</span>
 					</article>
 					<article class="products-item">
-						<a href="#" class="buy">Купить</a>
-						<a href="#" class="to-bookmarks">В закладки</a>
-						<img src="img/perforator-BOSCH-BFG-3000.jpg" width="127" height="112" alt="popular-product">
-						<h3>Перфоратор BOSCH BFG 3000</h3>
+						<section class="products-pop-up">
+							<a href="#" class="buy">Купить</a>
+							<a href="#" class="to-bookmarks">В закладки</a>
+						</section>
+						<img src="img/perforator-BOSCH-BFG-3000.png" width="180" height="160" alt="popular-product">
+						<h3>Перфоратор BOSCH<br>
+						BFG 3000</h3>
 						<span class="old-price">22500 Р.</span>
 						<span class="new-price">15500 Р.</span>
 					</article>	
 					<article class="products-item">
-						<a href="#" class="buy">Купить</a>
-						<a href="#" class="to-bookmarks">В закладки</a>
-						<img src="img/perforator-BOSCH-BFG-6000.jpg" width="144" height="128" alt="popular-product">
-						<h3>Перфоратор BOSCH BFG 6000</h3>
+						<section class="products-pop-up">
+							<a href="#" class="buy">Купить</a>
+							<a href="#" class="to-bookmarks">В закладки</a>
+						</section>
+						<img src="img/perforator-BOSCH-BFG-6000.png" width="180" height="160" alt="popular-product">
+						<h3>Перфоратор BOSCH<br>
+						BFG 6000</h3>
 						<span class="old-price">30500 Р.</span>
 						<span class="new-price">25500 Р.</span>
 					</article>	
 					<article class="products-item">
-						<a href="#" class="buy">Купить</a>
-						<a href="#" class="to-bookmarks">В закладки</a>
-						<img src="img/perforator-BOSCH-BFG-2000.jpg" width="127" height="112" alt="popular-product">
-						<h3>Перфоратор BOSCH BFG 2000</h3>
+						<section class="products-pop-up">
+							<a href="#" class="buy">Купить</a>
+							<a href="#" class="to-bookmarks">В закладки</a>
+						</section>
+						<img src="img/perforator-BOSCH-BFG-2000.png" width="180" height="160" alt="popular-product">
+						<h3>Перфоратор BOSCH<br>
+						BFG 2000</h3>
 						<span class="new-price">12500 Р.</span>
 					</article>		
-				</article>
+				</section>
 				<!--Блок "Популярные производители"-->
 				<article class="popular-brand">
 					<div class="brand-header">
 						<h2>Популярные производители:</h2>
-						<a href="#">Все производители</a>
+						<a href="#" class="btn">Все производители</a>
 					</div>
 					<ul>
 						<li><a href="#"><img src="img/bosch-brand.jpg" width="220" height="145" alt="popular-brand"></a></li>
@@ -167,94 +187,98 @@
 				<article class="main-services">
 					<section class="services-slogan">
 						<h2>Сервисы</h2>
-						<p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
-						Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+						<p>Хороший интернет-магазин отличается от плохого не только ценами!</br>
+						Мы стараемся изо всех сил, чтобы cделать ваши покупки приятными.</p>
 					</section>
 					<!--Галерея Блока "Сервис"-->
-					<section class="services-galery">
-						<ul>
+					<section class="services-galery clearfix">
+						<ul class="left">
 							<li><a href="#" class="galery-switch">Доставка</a></li>
 							<li><a href="#" class="galery-switch">Гарантия</a></li>
 							<li><a href="#" class="galery-switch">Кредит</a></li>
 						</ul>
-						<section class="galery-content delivery">
-							<h3>Доставка</h3>
-							<p>Мы с удовольствием доставим ваш товар прямо 
-							к вашему подъезду совершенно бесплатно!
-							Ведь мы неплохо заработаем, 
-							поднимая его на ваш этаж!</p>
-						</section>
-						<section class="galery-content guarantee">
-							<h3>Гарантия</h3>
-							<p>Если купленный у нас товар поломается или заискрит, 
-							а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
-							Дом уж восстановите как-нибудь сами.</p>
-						</section>
-						<section class="galery-content credit">
-							<h3>Кредит</h3>
-							<p>Залезть в долговую яму стало проще! 
-							Кредитные консультанты придут вам на помощь.</p>
+						<section class="galery-content right">
+							<section class="delivery">
+								<div>
+									<h3>Доставка</h3>
+									<p>Мы с удовольствием доставим ваш товар прямо<br> 
+									к вашему подъезду совершенно бесплатно!</p>
+									<p>Ведь мы неплохо заработаем,<br> 
+									поднимая его на ваш этаж!</p>
+								</div>
+							</section>
+							<section class="guarantee">
+								<div>
+									<h3>Гарантия</h3>
+									<p>Если купленный у нас товар поломается или заискрит,<br> 
+									а также в случае пожара, спровоцированного его возгаранием,<br>вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br> сгоревший товар на новый.<br>
+									Дом уж восстановите как-нибудь сами.</p>
+								</div>
+							</section>
+							<section class="credit">
+								<div>
+									<h3>Кредит</h3>
+									<p>Залезть в долговую яму стало проще!</p>
+									<p>Кредитные консультанты придут вам на помощь.</p>
+								</div>
+							</section>
 						</section>
 					</section>
 				</article>
 				<!--Блок описания и местоположения компании-->
-				<section class="description-company">
-					<h2>Компания «Техномарт»</h2>
-					<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br> строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
-					<p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-					Техномарт работает со многими транспортными компаниями: </p>
-					<ul>
-						<li>Деловые линии</li>
-						<li>Автотрейдинг</li>
-						<li>ЖелДорЭкспедиция</li>
-					</ul>
-					<a href="#">Подробнее о компании</a>
-				</section>
-				<section class="geolocation-company">
-					<h2>Контакты</h2>
-					<p>Вы можете забрать товар сами,<br>
-					заехав в наш офис:</p>
-					<a href=""><img src="img/infomation-map.jpg" width="300" height="158" alt="map"></a>
-					<a href="#">Заблудились? Напишите нам!</a>
-				</section>
-			</div>
-			<!--Модальное окно: Напишите нам-->
-			<article class="write-us">
-				<!--Кнопка-крестик закрытия окна-->
-				<a href="#" class="btn-close">close</a>
-				<div class="container">
-					<form action="https://echo.htmlacademy.ru" method="post">
-						<label>Ваше имя:
-							<input type="text" name="name" placeholder="Представьтесь, пожалуйста">
-						</label>
-						<label>Ваш email:
-							<input type="email" name="email" placeholder="Для отправки ответа">
-						</label>
-						<label>Текст письма:
-							<textarea name="letter" placeholder="В свободной форме"></textarea>
-						</label>
-						<button type="submit">Отправить</button>
-					</form>
+				<div class="clearfix">
+					<section class="description-company left">
+						<h2>Компания «Техномарт»</h2>
+						<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br> строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
+						<p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+						Техномарт работает со многими транспортными компаниями:</p>
+						<ul>
+							<li>Деловые линии</li>
+							<li>Автотрейдинг</li>
+							<li>ЖелДорЭкспедиция</li>
+						</ul>
+						<a href="#" class="btn">Подробнее о компании</a>
+					</section>
+					<section class="geolocation-company right">
+						<h2>Контакты</h2>
+						<p>Вы можете забрать товар сами,<br>
+						заехав в наш офис:</p>
+						<p><a href=""><img src="img/infomation-map.jpg" width="300" height="158" alt="map"></a></p>
+						<a href="#" class="btn">Заблудились? Напишите нам!</a>
+					</section>
+					<!--Модальное окно: Напишите нам-->
+					<article class="write-us">
+						<div class="container-letter clearfix">
+						<!--Кнопка-крестик закрытия окна-->
+							<a href="#" class="btn-close"><img src="img/close-btn.png"></a>
+							<form action="https://echo.htmlacademy.ru" method="post">
+								<label class="left">Ваше имя:<br>
+									<input type="text" name="name" placeholder="Представьтесь, пожалуйста">
+								</label>
+								<label class="right">Ваш email:<br>
+									<input type="email" name="email" placeholder="Для отправки ответа">
+								</label><br>
+								<label>Текст письма:<br>
+									<textarea name="letter" placeholder="В свободной форме"></textarea><br>
+								</label>
+								<button type="submit" class="btn">Отправить</button>
+							</form>
+						</div>
+					</article>
 				</div>
-			</article>
+			</div>
 		</main>
 		<!--Конец основного блока-->
 		<!--Подвал сайта-->
 		<footer class="main-footer">
 			<!--Верхняя секция подвала-->
 			<section class="footer-top">
-				<div class="container">
-					<div class="footer-logo">
-						<a href="#"><img src="img/footer-logo.png" width="220" height="68" alt="Техномарт"></a>
+				<div class="container clearfix">
+					<div class="footer-logo left">
+						<a href="#">Техномарт</a>
 					</div>
-					<!--Контакты-->
-					<section class="footer-contacts">
-						<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-						+7 (812) 555-05-55
-						</p>
-					</section>
 					<!--Меню навигации-->
-					<nav class="footer-menu-top">
+					<nav class="footer-menu-top right">
 						<ul>
 							<li><a href="#">Компания</a></li>
 							<li><a href="#">Новости</a></li>
@@ -263,8 +287,14 @@
 							<li><a href="#">Контакты</a></li>
 						</ul>
 					</nav>
+					<!--Контакты-->
+					<section class="footer-contacts left">
+						<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+						+7 (812) 555-05-55
+						</p>
+					</section>
 					<!--Меню нижнее-->
-					<nav class="footer-menu-bottom">
+					<nav class="footer-menu-bottom right">
 						<ul>
 							<li><a href="#">Материалы</a></li>
 							<li><a href="#">Техника</a></li>
@@ -276,29 +306,29 @@
 			</section>
 			<!--Нижняя секция подвала-->
 			<section class="footer-bottom">
-				<div class="container">
+				<div class="container clearfix">
 					<!--Копирайт компании-->
-					<section class="copyright">
+					<section class="copyright left">
 						<p>© 2010–2017 Компания «Техномарт»<br>
 						Все права защищены</p>
 					</section>
 					<!--Блок иконок соцсетей-->
-					<section class="footer-social">
+					<section class="footer-social left">
 						<ul>
 							<li><a class="social-btn social-btn-vk" href="#">Вконтакте</a></li>
 							<li><a class="social-btn social-btn-fb" href="#">Фэйсбук</a></li>
 							<li><a class="social-btn social-btn-inst" href="#">Инстаграм</a></li>
 						</ul>
 					</section>
-					<!--Обратная связь-->
-					<section class="feedback">
-						<p>Обратная связь:</p>
-						<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-					</section>
 					<!--Копирайт компании разработчика сайта-->
-					<section class="copyright-developer">
+					<section class="copyright-developer right">
 						<p>Разработано-</p>
 						<a href="https://htmlacademy.ru">htmlacademy.ru</a>
+					</section>
+					<!--Обратная связь-->
+					<section class="feedback right">
+						<p>Обратная связь:</p>
+						<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
 					</section>
 				</div>	
 			</section>	
