@@ -1,0 +1,1195 @@
+body {
+  min-width: 960px;
+
+   font: 13px/18px "PT Sans", "Arial", sans-serif;
+
+  color: #000;
+
+  background: #fff url("../img/body-bg.png");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+       -o-box-sizing: border-box;
+         -box-sizing: border-box;
+}
+
+/*===================================================
+              Спрайты-иконки
+=====================================================*/
+
+.sprite {
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-icon-basket {
+    width: 17px;
+    height: 16px;
+    background-position: -10px -10px;
+}
+
+.sprite-icon-bookmark {
+    width: 14px;
+    height: 16px;
+    background-position: -10px -46px;
+}
+
+.sprite-icon-fb {
+    width: 10px;
+    height: 18px;
+    background-position: -10px -82px;
+}
+
+.sprite-icon-home {
+    width: 15px;
+    height: 12px;
+    background-position: -10px -120px;
+}
+
+.sprite-icon-inst {
+    width: 17px;
+    height: 17px;
+    background-position: -10px -152px;
+}
+
+.sprite-icon-login {
+    width: 20px;
+    height: 17px;
+    background-position: -10px -189px;
+}
+
+.sprite-icon-login-blue {
+    width: 20px;
+    height: 17px;
+    background-position: -10px -226px;
+}
+
+.sprite-icon-logout {
+    width: 21px;
+    height: 17px;
+    background-position: -10px -263px;
+}
+
+.sprite-icon-logout-blue {
+    width: 21px;
+    height: 17px;
+    background-position: -10px -300px;
+}
+
+.sprite-icon-search {
+    width: 17px;
+    height: 17px;
+    background-position: -10px -337px;
+}
+
+.sprite-icon-search-red {
+    width: 17px;
+    height: 17px;
+    background-position: -10px -374px;
+}
+
+.sprite-icon-tel {
+    width: 19px;
+    height: 19px;
+    background-position: -10px -411px;
+}
+
+.sprite-icon-user {
+    width: 20px;
+    height: 18px;
+    background-position: -10px -450px;
+}
+
+.sprite-icon-user-blue {
+    width: 20px;
+    height: 18px;
+    background-position: -10px -488px;
+}
+
+.sprite-icon-vk {
+    width: 20px;
+    height: 12px;
+    background-position: -10px -526px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+
+  height: 38px;
+
+  padding: 10px;
+
+  font: 14px/18px "Cuprum", Arial, sans-serif;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+
+  color: #fff;
+
+  border-radius: 3px;
+}
+
+ a.btn:hover {
+  background-color: #ca2c37;
+}
+
+ a.btn:active {
+  background-color: #ba2732;
+}
+
+/*===================================================
+              Стили шапки сайта
+=====================================================*/
+
+.main-header {
+	margin-bottom: 118px;
+}
+
+.main-header-top {
+	min-height: 42px;
+
+	color: #fff;
+
+	background: #293449 url("../img/header-top-bg.png");
+}
+
+.header-logo {
+  color: #fff;
+
+  background-color: #ee3643;
+}
+
+.header-logo a {
+  display: block;
+  width: 220px;
+  height: 42px;
+
+  padding: 12px 0;
+
+  font: 24px/24px "Cuprum", "Arial", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 5px 0 0 #b52933;
+
+  color: #fff;  
+}
+
+.header-logo a:hover {
+  background-color: #ca2c37;
+  box-shadow: 0 5px 0 0 #9a212a;
+}
+
+.header-logo a:active {
+  background-color: #ba2732;
+  box-shadow: 0 5px 0 0 #8e1e26;
+}
+
+.header-search {
+  position: relative;
+
+  width: 270px;
+  height: 42px;
+
+  color: #fff;
+  
+  outline:none;
+  background-color: #293449;
+}
+
+.header-search input {
+  display: inline-block;
+  width: 270px;
+  height: 42px;
+  margin: 0;
+  padding-left: 48px;
+  border: none;
+
+  font: 17px/18px "Cuprum", "Arial", sans-serif;
+  color: #fff;
+  
+  outline: none;
+  background-color: transparent;
+}
+
+::-webkit-input-placeholder {color:#fff;}
+::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#fff;}
+
+.header-search button {
+  position: absolute;
+  
+  width: 49px;
+  height: 42px;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  font-size: 0;
+  vertical-align: top;
+  line-height: 0;
+
+  outline: none;
+  background-color: transparent;
+}
+
+.header-search button::before {
+  content:"";
+
+  position: absolute;
+  top:12px;
+  left: 17px;
+
+  width: 17px;
+  height: 17px;
+
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -10px -337px;
+  opacity: 0.3;
+}
+
+.header-search:hover {
+  background-color: #212a3a;
+}
+
+
+.header-search:hover button::before {
+  background-color: transparent;
+
+  opacity: 1;
+
+}
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+
+.header-search input:focus {
+  color: #000;
+  background: #fff;
+}
+
+.header-search input:focus ~ button::before {
+  background-position: -10px -374px;
+}
+
+.userblock {
+  min-height: 42px;
+  width: 450px;
+}
+
+.userblock ul {
+  margin: 0;
+  padding: 0;
+
+  font-size: 0;
+}
+
+.userblock li {
+  display: inline-block;
+
+  width: 150px;
+    
+  vertical-align: top;
+}
+
+.userblock a {
+  position: relative;
+
+  display: block;
+  
+  padding: 12px 0;
+  padding-left: 17px;
+  padding-right: 10px;
+
+  text-align: center;
+  text-decoration: none;
+  font: 17px/18px "Cuprum", "Arial", sans-serif;
+  color: #fff;
+}
+
+.userblock li:first-child a::before {
+  content:"";
+
+  position: absolute;
+  top: 12px;
+  left: 16px;
+
+  width: 17px;
+  height: 16px;
+
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -10px -46px;
+  opacity: 0.3;
+}
+
+.userblock li:first-child:hover a {
+  background-color: #212a3a;
+}
+
+.userblock li:first-child:hover a::before {
+  opacity: 1;
+}
+
+.userblock li:first-child:active a {
+  background-color: #161d29;
+
+  color: #8b8e94;
+}
+
+.userblock li:first-child:active a::before {
+  opacity: 0.5;
+}
+
+.userblock li:first-child+li a::before {
+  content:"";
+
+  position: absolute;
+  top: 12px;
+  left: 17px;
+
+  width: 14px;
+  height: 16px;
+
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -10px -10px;
+  opacity: 0.3;
+}
+
+.userblock li:first-child+li:hover a {
+  background-color: #212a3a;
+}
+
+.userblock li:first-child+li:hover a::before {
+ opacity: 1;
+}
+
+.userblock li:first-child+li:active a {
+  background-color: #161d29;
+
+  color: #8b8e94;
+}
+
+.userblock li:first-child+li:active a::before {
+  opacity: 0.5;
+}
+
+.userblock li:last-child a {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background-color: #63a63e;
+}
+
+.userblock li:last-child a:hover {
+  color: #fff;
+
+  background-color: #5fbb2d;
+}
+
+.userblock li:last-child a:active {
+  color: #b7c9af;
+
+  background-color: #518534;
+}
+/*===================================================
+              Стили средней части шапки сайта
+=====================================================*/
+
+.main-header-middle {
+  min-height: 158px;
+
+  background: #fff url(../img/header-middle-bg.png);
+
+  color: #000;
+}
+
+.site-description {
+  width: 300px;
+
+  padding-top: 50px;
+  padding-left: 52px;
+  margin-right: 20px;
+
+  font: italic 16px/23px "Cuprum", "Arial", sans-serif;
+
+  color: #ee3643;
+}
+
+.contacts {
+  width: 300px;
+
+  font: 14px/24px "Cuprum", "Arial", sans-serif;
+
+  color: #32425c;
+
+  margin-right: 20px;
+}
+
+.contacts-tel {
+  position: relative;
+
+  padding-top: 59px;
+  padding-left: 75px;
+
+  font: 21px/21px "Cuprum", "Arial", sans-serif;
+
+  color: #e9292a;
+}
+
+.contacts-tel::before {
+  content:"";
+
+  position: absolute;
+  top: 59px;
+  left: 15px;
+
+  width: 19px;
+  height: 19px;
+  
+
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -10px -411px;
+  
+}
+
+.contacts-adress {
+  padding-left: 10px;
+  padding-top: 15px;
+}
+
+.user-autorization {
+  width: 300px;
+
+  font-size: 0;
+}
+
+.user-autorization a {
+  position: relative;
+
+  display: inline-block;
+
+  width: 140px;
+
+  padding-left: 15px;
+  margin-top: 57px;
+
+  font: 21px/21px "Cuprum", "Arial", sans-serif;
+  text-decoration: none;
+
+  color: #000;
+}
+
+.user-autorization a:hover {
+  color: #ee3643;
+}
+
+.user-autorization a:active {
+  color: #000;
+  opacity: 0.3;
+}
+
+.user-autorization a:first-child {
+  padding-left: 67px;
+  margin-right: 20px;
+}
+
+.user-autorization a:first-child::before {
+  content:"";
+
+  position: absolute;
+  top: 4px;
+  left: 34px;
+
+  width: 20px;
+  height: 17px;
+
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -10px -189px;
+}
+
+.user-autorization a:first-child:hover::before {
+  background-position: -10px -226px;
+}
+
+/*===================================================
+              Стили меню шапки сайта
+=====================================================*/
+
+.main-header-bottom {
+  min-height: 60px;
+
+  margin-bottom: 100px;
+
+  background: #32425c url(../img/header-bottom-bg.png);
+  
+  color: #fff;    
+}
+
+.main-header-bottom ul {
+  margin: 0;
+  padding: 0;
+
+  font-size: 0;
+}
+
+.main-menu ul {
+  padding: 0 25px;
+}
+
+.main-header-bottom li {
+  display: inline-block;
+
+  list-style:none;
+}
+
+.main-header-bottom a {
+  display: block;
+
+  padding: 20px 30px;
+  padding-bottom: 24px;
+
+  font: 17px/17px "Cuprum", "Arial", sans-serif;
+  text-decoration: none;
+
+  color: #fff;
+}
+
+.main-header-bottom a:hover {
+  background-color: #293449;
+
+  color: #fff;
+}
+
+.main-header-bottom a:active {
+  background-color: #1d2739;
+
+  color: #93969c;
+}
+
+/*===================================================
+              Промоблок сайта - слайдер
+=====================================================*/
+
+.main-promoblock {
+  position: relative;
+
+  margin-bottom: 55px;
+}
+
+.main-promoblock::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+.promoblock-item {
+  position: relative;
+
+  float: left;
+
+  width: 300px;
+  height: 123px;
+
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.promoblock-item:nth-child(1) {
+  background: #f6b22d url(../img/promo-pail.png);
+  background-repeat: no-repeat;
+  background-position: 213px 31px;
+}
+
+.promoblock-item .flag {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  width: 60px;
+  height: 60px;
+
+  text-indent: -1000px;
+
+  overflow: hidden;
+   z-index: 20;
+}
+.promoblock-item .flag-new {
+  background:url("../img/promo-flag-new.png") no-repeat 0 0;
+}
+
+.promoblock-item:nth-child(2) {
+  background: #4aafde url(../img/promo-screwdriver.png);
+  background-repeat: no-repeat;
+  background-position: 196px 33px;
+}
+
+.promoblock-item:nth-child(3) {
+  margin-right: 0;
+
+  background: #cc79d1 url(../img/promo-tractor.png);
+  background-repeat: no-repeat;
+  background-position: 190px 30px;
+}
+
+.promoblock-item:nth-child(5) {
+  margin-right: 0;
+
+  background: #85d179 url(../img/promo-chip-basket.png);
+  background-repeat: no-repeat;
+  background-position: 196px 26px;
+}
+
+.promoblock-item:nth-child(6) {
+  margin-right: 0;
+  margin-bottom: 0;
+
+  background: #f6b22d url(../img/promo-car.png);
+  background-repeat: no-repeat;
+  background-position: 190px 31px;
+}
+
+.promoblock-item-big {
+width: 620px;
+height: 266px;
+
+margin-bottom: 0;
+}
+
+.promoblock-item span {
+  position: absolute;
+  top: 21px;
+  left: 23px;
+
+  font: bold 24px/30px "Cuprum", Arial, sans-serif;
+
+  color: #fff;
+}
+
+.promoblock-item a {
+  position: absolute;
+  top: 63px;
+  left: 25px;
+
+  width: 135px;
+  height: 38px;
+
+  padding: 10px 0;
+
+  font: 14px/18px "Cuprum", Arial, sans-serif;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: rgba(0, 0, 0, 0.1);
+  
+  color: #fff;
+
+  border-radius: 3px;
+}
+
+.promoblock-item a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.promoblock-item a:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.promoblock-control a {
+  position: absolute;
+  top: 349px;
+  left: 26px;
+
+  width: 196px;
+  
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.promoblock-control button {
+  border: none;
+
+  background: none;
+}
+
+.promoblock-control button.galery-prev {
+  position: absolute;
+  top: 255px;
+  left: 20px;
+}
+
+.promoblock-control button.galery-next {
+  position: absolute;
+  top: 255px;
+  left: 573px;
+}
+
+/*===================================================
+              Блок - Популярные товары
+=====================================================*/
+
+.products-pop {
+  min-height: 427px;
+
+  background-color: #fff;
+
+  color: #000;   
+}
+
+.products-header {
+  height: 89px;
+
+  margin-bottom: 20px;
+
+  background: #f7f3ec;
+}
+
+.products-header h2 {
+  width: 400px;
+
+  padding: 0;
+  margin: 0;
+  margin-left: 29px;
+  margin-top: 29px; 
+  
+  font: 30px/30px "Cuprum", "Arial", sans-serif;
+  text-transform: uppercase;
+
+  color: #32425c;
+}
+
+.products-header a {
+  display: block;
+
+  width: 253px;
+
+  margin-right: 24px;
+  margin-top: 24px;
+}
+
+/*===================================================
+              Блок - Карточка товара
+=====================================================*/
+
+.products-item {
+  position: relative;
+
+  float: left;
+
+  width: 220px;
+  height: 318px;
+
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #e5e5e5;
+
+  font: bold 18px/20px "PT Sans", "Arial", sans-serif;
+  text-align: center;
+}
+
+.products-item .flag {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+
+  width: 60px;
+  height: 60px;
+
+  text-indent: -1000px;
+
+  overflow: hidden;
+   z-index: 20;
+}
+.products-item .flag-new {
+  background: url("../img/promo-flag-new.png") no-repeat 0 0;
+}
+
+.products-pop .products-item:last-child {
+  margin-right: 0;
+}
+
+.products-item:hover {
+  display: block;
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
+.products-item .product-action {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 218px;
+  height: 168px;
+
+  padding: 40px 0;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.products-item .product-action .buy,
+.products-item .product-action .to-bookmarks {
+  position: relative;
+  display: block;
+  width: 129px;
+
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0;
+
+  border:3px solid #63a63e;
+  border-bottom-color: #367315;
+
+  background-color: #63a63e;
+
+  color: #fff;
+  font: normal 14px/18px "Cuprum","Arial", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase; 
+
+  border-radius: 3px;
+}
+
+.product-action .buy:hover  {
+  background-color: #5fbb2d;
+
+  border-color: #5fbb2d;
+  border-bottom-color: #367315;
+}
+
+.product-action .buy:active  {
+  background-color: #518534;
+
+  border-color: #518534;
+}
+
+.products-item .product-action .buy::before {
+  content:"";
+
+  position: absolute;
+  top: 6px;
+  left: 8px;
+
+  width: 17px;
+  height: 16px;
+
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -10px -10px;
+
+  opacity: 0.3;
+}
+
+.products-item .product-action .buy:hover::before {
+  opacity: 1;
+}
+
+.products-item .product-action .to-bookmarks {
+  color: #32425c;
+
+  background: #fff;
+
+  border-bottom-color: #63a63e;
+}
+
+.product-action .to-bookmarks:hover {
+  border-color: #32425c;
+}
+
+.product-action .to-bookmarks:active {
+  opacity: 0.3;
+}
+
+.products-item .product-action {
+    display: none;
+}
+.products-item:hover .product-action {
+    display: block;
+}
+
+.products-item-img {
+    width: 218px;
+    height: 168px;
+}
+
+.products-item-img img {
+    max-width: 100%;
+}
+
+.products-item-title {
+    min-height: 40px;
+    padding: 0 25px;
+    
+    margin-top: 10px;
+    margin-bottom: 8px;    
+}
+
+.products-item-title h3 {
+  margin: 0;
+  padding: 0;
+  
+  font: bold 18px/20px "PT Sans", "Arial", sans-serif;
+}
+
+.products-item .old-price {
+    min-height: 20px;
+
+    margin-top: 9px;
+    margin-bottom: 10px;
+
+    font: bold 17px/20px "PT Sans", "Arial", sans-serif;
+
+    color: #999;
+
+    text-decoration: line-through;
+}
+
+.products-item .new-price {
+  position:relative;
+
+  width: 140px;
+
+  margin: 0 auto;
+  margin-top: -2px;
+  padding: 10px 30px;
+
+  font: bold 17px/20px "PT Sans", "Arial", sans-serif;
+
+  color: #fff;
+
+  background: #ee3643;
+  border-radius: 3px;
+}
+
+.products-item .new-price:after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: -20px;
+
+    width: 0;
+    height: 0;
+
+    border: 20px solid #fff;
+    border-left-color: #ee3643;
+}
+
+/*===================================================
+              Блок - Популярные производители
+=====================================================*/
+
+.popular-brand {
+  margin-bottom: 111px;
+}
+
+.brand-header {
+  height: 89px;
+
+  margin-bottom: 20px;
+
+  background: #f7f3ec;
+}
+
+.brand-header h2 {
+  width: 400px;
+
+  padding: 0;
+  margin: 0;
+  margin-left: 25px;
+  margin-top: 30px; 
+  
+  font: 30px/30px "Cuprum", "Arial", sans-serif;
+  text-transform: uppercase;
+
+  color: #32425c;
+}
+
+.brand-header a {
+  display: block;
+
+  width: 253px;
+
+  margin-right: 24px;
+  margin-top: 25px;
+}
+
+.popular-brand ul {
+  padding: 0;
+  margin: 0;
+
+  font-size: 0;
+  list-style: none;
+}
+
+.popular-brand li {
+  display: inline-block;
+
+  padding: 0;
+  margin: 0;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  border: 1px solid #e7e7e7;
+
+  font-size: 0;
+  vertical-align: top;
+}
+
+.popular-brand li:nth-child(4n) {
+  margin-right: 0;
+} 
+
+
+.popular-brand li:hover {
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);  
+}
+
+.popular-brand li:active {
+  box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
+  
+}
+
+.popular-brand li:active img {
+  opacity: 0.3;  
+}
+
+/*===================================================
+              Блок - Сервисы
+=====================================================*/
+
+.main-services {
+  font: 13px/24px "PT Sans", "Arial", sans-serif;
+
+  background-color: #fff;
+
+  color: #000;
+}
+
+.services-slogan {
+  margin-bottom: 68px;
+}
+
+.services-slogan h2 {
+
+  margin: 0;
+  padding: 0;
+  margin-bottom: 26px;
+
+  font: 30px/30px "Cuprum", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+/*===================================================
+              Блок - Сервисы
+=====================================================*/
+
+.services-galery {
+  
+}
+
+.services-galery ul {
+  position: relative;
+
+  padding: 0;
+  margin: 0;
+  
+  list-style:none;
+
+  background-color: #32425c;
+
+  color: #fff;
+}
+
+.services-galery ul::after {
+  content:"";
+
+  position: absolute;
+
+  top: -45px;
+  left: 230px;
+
+
+  width:  10px;
+  height: 272px;
+
+  background: url("../img/service-slider-septum.png");
+  background-repeat: no-repeat;
+  opacity: 0.25;  
+}
+
+.services-galery a {
+  display: block;
+
+  width: 240px;
+  height: 61px;
+
+  padding: 13px 0;
+  padding-left: 22px;
+  
+  border-top: 1px solid #405069;
+  border-bottom: 1px solid #293449;
+
+  font: bold 21px/30px "Cuprum", "Arial", sans-serif;
+  text-decoration: none;
+
+  color: #fff;
+}
+
+.services-galery a.action {
+  background-color: #fff;
+
+  color: #32425c;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+}
+
+.services-galery a:hover {
+  background-color: #293449;
+}
+
+.services-galery a.action:hover {
+  background-color: #fff;
+}
+
+.galery-content h3 {
+  font: 36px/36px "Cuprum", "Arial", sans-serif;
+  text-transform: uppercase;
+
+  color: #32425c;
+}
