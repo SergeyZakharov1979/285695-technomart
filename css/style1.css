@@ -196,7 +196,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   box-shadow: 0 5px 0 0 #b52933;
-
+  
   color: #fff;  
 }
 
@@ -233,14 +233,16 @@ body {
   font: 17px/18px "Cuprum", "Arial", sans-serif;
   color: #fff;
   
-  outline: none;
   background-color: transparent;
 }
 
-::-webkit-input-placeholder {color:#fff;}
-::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
-:-moz-placeholder           {color:#fff;}/* Firefox 18- */
-:-ms-input-placeholder      {color:#fff;}
+.header-search input[type="search"]::-webkit-input-placeholder {
+    color: #fff;
+   } 
+
+.header-search input[type="search"]::-moz-placeholder {
+    color: #fff;
+   }
 
 .header-search button {
   position: absolute;
@@ -256,11 +258,10 @@ body {
   vertical-align: top;
   line-height: 0;
 
-  outline: none;
   background-color: transparent;
 }
 
-.header-search button::before {
+.header-search button::after {
   content:"";
 
   position: absolute;
@@ -281,24 +282,27 @@ body {
 }
 
 
-.header-search:hover button::before {
+.header-search:hover button::after {
   background-color: transparent;
 
   opacity: 1;
 
 }
 
-:focus::-webkit-input-placeholder {color: transparent}
-:focus::-moz-placeholder          {color: transparent}
-:focus:-moz-placeholder           {color: transparent}
-:focus:-ms-input-placeholder      {color: transparent}
+.header-search input[type="search"]:focus::-webkit-input-placeholder {
+    color: transparent;
+   } 
+
+.header-search input[type="search"]:focus-moz-placeholder {
+    color: transparent;
+   }
 
 .header-search input:focus {
   color: #000;
   background: #fff;
 }
 
-.header-search input:focus ~ button::before {
+.header-search input:focus ~ button::after {
   background-position: -10px -374px;
 }
 
@@ -492,6 +496,7 @@ body {
 
 .user-autorization {
   width: 300px;
+  min-height: 119px;
 
   font-size: 0;
 }
@@ -501,10 +506,12 @@ body {
 
   display: inline-block;
 
-  width: 140px;
+  width: 150px;
+  height: 41px;
 
   padding-left: 15px;
-  margin-top: 57px;
+  padding: 10px;
+  margin-top: 48px;
 
   font: 21px/21px "Cuprum", "Arial", sans-serif;
   text-decoration: none;
@@ -521,17 +528,22 @@ body {
   opacity: 0.3;
 }
 
+.user-autorization a:last-child {
+  padding-left: 25px;
+  padding-right: 20px;
+  
+}
+
 .user-autorization a:first-child {
   padding-left: 67px;
-  margin-right: 20px;
 }
 
 .user-autorization a:first-child::before {
   content:"";
 
   position: absolute;
-  top: 4px;
-  left: 34px;
+  top: 11px;
+  left: 33px;
 
   width: 20px;
   height: 17px;
@@ -1094,6 +1106,8 @@ margin-bottom: 0;
 =====================================================*/
 
 .main-services {
+  margin-bottom: 155px;
+
   font: 13px/24px "PT Sans", "Arial", sans-serif;
 
   background-color: #fff;
@@ -1107,27 +1121,23 @@ margin-bottom: 0;
 
 .services-slogan h2 {
 
-  margin: 0;
   padding: 0;
-  margin-bottom: 26px;
+  margin: 26px 0;
 
   font: 30px/30px "Cuprum", "Arial", sans-serif;
   text-transform: uppercase;
 }
 
 /*===================================================
-              Блок - Сервисы
+              Блок - Сервисы-Галерея
 =====================================================*/
-
-.services-galery {
-  
-}
 
 .services-galery ul {
   position: relative;
 
   padding: 0;
   margin: 0;
+  margin-right: 81px;
   
   list-style:none;
 
@@ -1187,9 +1197,616 @@ margin-bottom: 0;
   background-color: #fff;
 }
 
+.galery-content {
+  position: relative;  
+}
+
 .galery-content h3 {
+  margin-top: 0;
+  margin-bottom: 25px;
+
   font: 36px/36px "Cuprum", "Arial", sans-serif;
   text-transform: uppercase;
 
   color: #32425c;
+}
+
+.credit,
+.guarantee {
+  display: none;
+}
+
+.galery-content .delivery::after {
+  content:"";
+
+  position: absolute;
+  top: 25px;
+  left: 150px;
+
+  width: 468px;
+  height: 261px;
+
+  background: url("../img/service-delivery.png");
+  background-repeat: no-repeat;
+}
+
+.galery-content .guarantee::after {
+  content:"";
+
+  position: absolute;
+  top: 2px;
+  left: 238px;
+
+  width: 389px;
+  height: 283px;
+
+  background: url("../img/service-guarantee.png");
+  background-repeat: no-repeat;
+}
+
+.galery-content .credit::after {
+  content:"";
+
+  position: absolute;
+  top: 0px;
+  left: 180px;
+
+  width: 465px;
+  height: 285px;
+
+  background: url("../img/service-credit.png");
+  background-repeat: no-repeat;
+}
+
+.galery-content .credit a.btn {
+  display: inline-block;
+
+  width: 194px;
+  
+  height: 38px;
+
+  padding: 10px;
+  margin-top: 12px;
+
+  border: none;
+
+  font: 14px/18px "Cuprum", Arial, sans-serif;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+
+  color: #fff;
+
+  border-radius: 3px;
+}
+
+ .galery-content .credit a.btn:hover {
+  background-color: #ca2c37;
+}
+
+ .galery-content .credit a.btn:active {
+  background-color: #ba2732;
+}  
+
+/*===================================================
+       Блок описания и местоположения компании
+=====================================================*/
+
+.description-geolocation {
+  position: relative;
+
+  background-color: #fff;
+
+  color: #000;
+}
+
+.description-geolocation h2 {
+  margin-bottom: 27px;
+
+  font: 30px/30px "Cuprum", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.description-geolocation p {
+  padding: 0;
+  margin: 0;
+
+  font: 13px/24px "PT Sans", "Arial", sans-serif;
+
+  margin-bottom: 24px;
+}
+
+.description-company ul {
+  margin: 0;
+  margin: -3px;
+  margin-bottom: 36px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.description-company li {
+  position: relative;
+
+  display: block;
+
+  padding-left: 40px;
+  margin-bottom: 20px;
+
+  font: 18px/20px "Cuprum", "Arial", sans-serif;
+}
+
+.description-company li::before {
+  content:"";
+
+  position: absolute;
+
+  top: 9px;
+  left: 3px;
+
+  width: 25px;
+  height: 2px;
+
+  background-color: #fb565a;
+  background-repeat: no-repeat;
+}
+
+.description-company .btn {
+  width: 220px;
+}
+
+.geolocation-company p {
+  margin-bottom: 31px;
+}
+
+.geolocation-company .btn {
+  width: 300px;
+}
+
+/*===================================================
+                  Модальное окно: Напишите Нам
+=====================================================*/
+.write-us {
+  display: none;
+}
+
+.write-us input::-webkit-input-placeholder {
+    color: #ccc;
+   } 
+
+.write-us input::-moz-placeholder {
+    color: #ccc;
+   }
+
+.write-us:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+ 
+.write-us:focus::-moz-placeholder {
+  color: transparent;
+}
+ 
+.write-us:focus:-moz-placeholder {
+  color: transparent;
+}
+ 
+.write-us:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+
+.write-us {
+  position: absolute;
+
+  top: 153px;
+  right: 160px;
+
+  width: 620px;
+  height: 430px;
+
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-left: 80px;
+  padding-right: 80px;
+  border-top: 7px solid #ee3643;
+
+  font: 18px/18px "Cuprum", "Arial", sans-serif;
+
+  background-color: #fff;
+
+  color: #000;
+
+  box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+}
+
+.write-us .close {
+  position: relative;
+}
+
+.write-us a.btn-close {
+  position: absolute;
+  top: -37px;
+  right: -70px;
+
+  width: 21px;
+  height: 21px;
+
+  text-indent: -1000px;
+}
+
+
+.write-us a.btn-close:active {
+  opacity: 0.5;
+}
+
+.write-us a.btn-close::after {
+  content: "";
+
+  position: absolute;
+  top: 9px;
+  right: -2px;
+  
+  width: 26px;
+  height: 4px;
+
+  background-color: #ee3643;
+  transform: rotate(45deg);
+}
+
+.write-us a.btn-close::before {
+  content: "";
+
+  position: absolute;
+  top: 9px;
+  right: -2px;
+  
+  width: 26px;
+  height: 4px;
+
+  background-color: #ee3643;
+  transform: rotate(-45deg);
+}
+
+.write-us input {
+  width: 220px;
+  height: 38px;
+
+  padding-left: 13px ;
+  margin-top: 11px;
+  margin-bottom: 20px;
+
+  border: 2px solid #999;
+  border-radius: 3px;
+
+  font: 13px/18px "PT Sans", "Arial", sans-serif;
+
+  color: #999;
+}
+
+.write-us textarea {
+  width: 100%;
+  min-height: 114px;
+
+  padding-left: 13px;
+  padding-top: 7px;
+  margin-top: 10px;
+
+  border: 2px solid #999;
+  border-radius: 3px;
+
+  font: 13px/18px "PT Sans", "Arial", sans-serif;
+
+  color: #999;
+}
+
+.write-us button {
+  width: 100%;
+
+  margin-top: 69px;
+
+  border:none;
+  border-radius: 3px;
+
+}
+
+.write-us button:hover {
+  background-color: #ca2c37;
+}
+
+ .write-us button:active {
+  background-color: #ba2732;
+}
+
+/*===================================================
+                      Подвал сайта
+=====================================================*/
+
+.main-footer {
+  min-height: 300px;
+
+  margin-top: 86px;
+}
+
+.footer-top {
+  min-height: 193px;
+
+  font: 18px/24px "Cuprum", "Arial", sans-serif;
+
+  color: #fff;
+
+  background: #32425c url(../img/footer-top-bg.png);
+}
+
+.footer-logo {
+  color: #fff;
+
+  background-color: #ee3643;
+}
+
+.footer-logo a {
+  display: block;
+  width: 220px;
+  height: 63px;
+
+  padding: 17px 0;
+
+  font: 30px/30px "Cuprum", "Arial", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 5px 0 0 #b52933;
+  
+  color: #fff;  
+}
+
+.footer-logo a:hover {
+  background-color: #ca2c37;
+  box-shadow: 0 5px 0 0 #9a212a;
+}
+
+.footer-logo a:active {
+  background-color: #ba2732;
+  box-shadow: 0 5px 0 0 #8e1e26;
+}
+
+.footer-menu-top {
+  width: 560px;
+}
+
+.footer-menu-top ul {
+  margin: 0;
+  padding: 0;
+
+   font-size: 0;
+}
+
+.footer-menu-top li {
+  display: inline-block;
+
+  margin-top: 38px;
+  margin-left: 59px;
+}
+
+.footer-menu-top li:first-child {
+  margin-left: 12px;
+}
+
+.footer-menu-top li:last-child {
+  margin-right: 0;
+}
+
+.footer-menu-top a {
+  display: block;
+
+  font: 18px/24px "Cuprum", "Arial", sans-serif;
+  text-decoration: none;
+
+  color: #fff;
+}
+
+.footer-menu-top a:hover {
+  text-decoration: underline;
+}
+
+.footer-menu-top a:active {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+/**Контакты**/
+.footer-contacts {
+  margin-top: 15px;
+  margin-left: 3px;
+}
+
+/**Меню нижнее**/
+.footer-menu-bottom {
+  width: 560px;
+}
+
+.footer-menu-bottom ul {
+  padding: 0;
+  margin: 0;
+
+  font-size: 0;
+}
+
+.footer-menu-bottom li {
+  display: inline-block;
+
+  margin-top: 29px;
+  margin-left: 59px;
+}
+
+.footer-menu-bottom li:first-child {
+  margin-left: 37px;
+}
+
+.footer-menu-bottom a {
+  display: block;
+
+  font: 18px/24px "Cuprum", "Arial", sans-serif;
+  text-decoration: none;
+
+  color: #ffd180;
+}
+
+.footer-menu-bottom a:hover {
+  text-decoration: underline;
+}
+
+.footer-menu-bottom a:active {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.footer-bottom {
+  min-height: 105px;
+  padding-top: 20px;
+
+  font: 16px/18px "Cuprum", "Arial", sans-serif;
+  
+  background-color: #293449;
+
+  color: #fff;
+}
+
+.copyright {
+  width: 230px;
+  margin-left: 2px;
+}
+
+
+.footer-social {
+  width: 160px;
+  margin-left: 160px;
+  margin-top: 15px;
+}
+
+.footer-social ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  font-size: 0;
+}
+
+.footer-social li {
+  display: inline-block;
+
+  margin-right: 5px;
+}
+
+.footer-social li:last-child {
+  margin-right: 0;
+}
+
+.footer-social a.social-btn {
+  position: relative;
+
+  display: block;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  text-indent: -1000px;
+
+  background-color: #212a3a;
+
+  color: #fff;
+}
+
+.footer-social a.social-btn:hover  {
+  background-color: #ee3643;
+
+  color: #fff;
+}
+
+.footer-social a.social-btn:active  {
+  background-color: #ee3643;
+
+  color: #fff;
+}
+
+.social-btn::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+
+  transform: translate(-50%, -50%);
+}
+
+.social-btn-vk::before {
+  width: 20px;
+  height: 12px;
+
+  background-position: -10px -526px;
+}
+
+.social-btn-fb::before {
+  width: 10px;
+  height: 18px;
+
+  background-position: -10px -82px;
+}
+
+.social-btn-inst::before {
+  width: 17px;
+  height: 17px;
+
+  background-position: -10px -152px;
+}
+
+.copyright-developer {
+  width: 140px;
+  padding-left: 30px;
+  margin-left: 20px;
+}
+
+.copyright-developer a {
+  font: 16px/18px "Cuprum", "Arial", sans-serif;
+  text-decoration: none;
+
+  color: #ffd180;
+}
+
+.copyright-developer a:hover {
+  text-decoration: underline;
+}
+
+.copyright-developer a:active {
+  text-decoration: none;
+
+  color: #ee3643;
+}
+
+.feedback {
+  width: 140px;
+  margin-left: 20px;
+}
+
+.feedback a {
+  font: 16px/18px "Cuprum", "Arial", sans-serif;
+  text-decoration: none;
+  color: #ffd180;
+}
+
+.feedback a:hover {
+  text-decoration: underline;
+}
+
+.feedback a:active {
+  text-decoration: none;
+
+  color: #ee3643;  
 }
