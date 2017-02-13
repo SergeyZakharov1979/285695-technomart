@@ -5,7 +5,7 @@
 	  <title>Техномарт</title>
 	  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
 	  <link rel="stylesheet" href="css/normalize.css">
-	  <link rel="stylesheet" href="css/style1.css">
+	  <link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 	<!--Начало шапки сайта-->
@@ -85,7 +85,7 @@
 				<!--Меню навигации "Хлебные крошки"-->
 				<nav class="breadcrumbs">
 					<ul>
-						<li><a href="#" class="home">Home</a></li>
+						<li><a href="index.html" class="home">Home</a></li>
 						<li><a href="#">Каталог</a></li>
 						<li><a href="#">Инструмент</a></li>
 						<li>Перфораторы</li>
@@ -107,25 +107,35 @@
 				<!--Сайдбар с фильтром каталога-->
 				<section class="catalog-sidebar left">
 					<form action="https://echo.htmlacademy.ru" class="form-filter">
-						<section class="prise-slide">
-							<h3>Цена</h3>
-							<input type="range" min="0" max="30000" step="1">
+						<span class="price">Цена:</span>
+						<section class="range-filters">
+							<div class="range-controls">
+								<div class="scale">
+									<div style="width:82%" class="bar"></div>
+								</div>
+								<div class="toggle min-toggle"></div>
+								<div class="toggle max-toggle"></div>
+							</div>
+							<div class="price-controls">
+								<label><input type="text" class="min-price" value="0"> &mdash;  </label>
+								<label><input type="text" class="max-price" value="30000"></label>
+							</div>
 						</section>
 						<section class="selection-brand">
-							<h3>Производители:</h3>
+							<span>Производители:</span>
 							<ul>
-								<li><label><input type="checkbox" name="bosch">Bosch</label></li>
-								<li><label><input type="checkbox" name="interscol">Интерскол</label></li>
-								<li><label><input type="checkbox" name="makita">Makita</label></li>
-								<li><label><input type="checkbox" name="dewalt">Dewalt</label></li>
-								<li><label><input type="checkbox" name="hitachi">Hitachi</label></li>
+								<li><label><input type="checkbox" name="bosch"><span class="checkbox-indicator"></span>Bosch</label></li>
+								<li><label><input type="checkbox" name="interscol"><span class="checkbox-indicator"></span>Интерскол</label></li>
+								<li><label><input type="checkbox" name="makita"><span class="checkbox-indicator"></span>Makita</label></li>
+								<li><label><input type="checkbox" name="dewalt"><span class="checkbox-indicator"></span>Dewalt</label></li>
+								<li><label><input type="checkbox" name="hitachi"><span class="checkbox-indicator"></span>Hitachi</label></li>
 							</ul>
 						</section>
 						<section class="selection-power">
-							<h3>Питание:</h3>
+							<span>Питание:</span>
 							<ul>
-							<li><label><input type="radio" name="power">Аккумуляторные</label></li>
-							<li><label><input type="radio" name="power">Сетевые</label></li>
+							<li><label><input type="radio" name="power"><span class="radio-indicator"></span>Аккумуляторные</label></li>
+							<li><label><input type="radio" name="power"><span class="radio-indicator"></span>Сетевые</label></li>
 							</ul>
 						</section>
 						<button type="submit">Показать</button>
@@ -266,10 +276,10 @@
 				<!--Пагинация каталога-->
 				<section class="catalog-pagination">
 						<ul>
-							<li><a href="#">1</a></li>
+							<li><a href="#" class="active">1</a></li>
 							<li><a href="#">2</a></li>
 							<li><a href="#">3</a></li>
-							<li><a href="#">Следующая</a></li>
+							<li><a href="#" class="next-page">Следующая</a></li>
 						</ul>
 				</section>
 				<section class="list-description left">
@@ -280,10 +290,16 @@
 			</div>
 			<!--Модальное окно: Товар добавлен в корзину-->
 			<section class="items-in-cart">
+				<div class="wrap">
 				<a href="#" class="btn-close">close</a>
 				<p>Товар добавлен в корзину!</p>
-				<a href="#">Оформить заказ</a>
-				<a href="#">Продолжить покупки</a>
+				</div>
+				<div class="cart-control">
+					<div class="wrap-control">
+					<a href="#" class="order">Оформить заказ</a>
+					<a href="#" class="shoping">Продолжить покупки</a>
+					</div>
+				</div>
 			</section>
 		</main>
 		<!--Конец основного блока-->
