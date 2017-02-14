@@ -125,7 +125,7 @@ body h2 {
 }
 
 /*===================================================
-      Стили флоато, распорки, контейнера и кнопки
+      Стили флоаты, распорки, контейнера и кнопки
 =====================================================*/
 
 .left {
@@ -439,6 +439,10 @@ body h2 {
   color: #b7c9af;
 
   background-color: #518534;
+}
+
+.user-basket-red {
+  background-color: #ee3643;
 }
 /*===================================================
               Стили средней части шапки сайта
@@ -1768,6 +1772,7 @@ body h2 {
 =====================================================*/
 .items-in-cart {
   display: none;
+  
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1866,7 +1871,6 @@ body h2 {
   margin-top: 37px;
 
   background-color: #f1f1f1;
-  outline: 1px solid red;
 }
 
 .items-in-cart .wrap-control {
@@ -1922,11 +1926,11 @@ body h2 {
 } 
 
 .items-in-cart a.shoping:hover {
-  border: 1px solid #32425c;
+  outline: 1px solid #32425c;
 }
 
 .items-in-cart a.shoping:active {
-  border: 1px solid #32425c;
+  outline: 1px solid #32425c;
   opacity: 0.3;
 }
 
@@ -2215,15 +2219,20 @@ body h2 {
   background: #00ca74;
 }
 
-.range-controls .toggle {
+.range-controls .toggle::before {
+  content: "";
+
   position: absolute;
-  top: 30px;
-  left: 0px;
+  top: 50%;
+  left: 50%;
+
+  margin-top: -10px;
+  margin-left: -2px;
 
   width: 4px;
   height: 4px;
 
-  border: 10px solid #fff;
+  border: 8px solid #fff;
   border-radius: 50%;
   
   background: #ababab;
@@ -2233,30 +2242,39 @@ body h2 {
   cursor: pointer;
 }
 
-.range-controls .min-toggle {
-  left: 28px;
+.range-controls .min-toggle::before {
+  content: "";
+
+  left: 18px;
 }
 
-.range-controls .max-toggle {
+.range-controls .max-toggle::before {
+  content: "";
   left: 168px;
 }
 
 .price-controls {
-  font-size: 0;
+  position: relative;
+
+  width: 220px;
 }
 
 .price-controls label {
-  font-size: 17px;
-  display: inline-block;
+  display: block;
+
+  width: 95px;
 }
 
 .price-controls input {
-  font: 17px/18px "PT Sans", "Arial", sans-serif;
-  width: 100px;
+  position: relative;
+
+  display: block;
+
+  width: 95px;
   height: 41px;
 
   padding: 8px 10px;
-
+  font: 17px/18px "PT Sans", "Arial", sans-serif;
   text-align: center;
 
   background-color: #f7f3ec;
@@ -2265,9 +2283,22 @@ body h2 {
   color: #000;
 }
 
-.max-price {
-  text-align: right;
+.price-controls::before {
+  content: "";
+
+  position: absolute;
+  top:50%;
+  left: 50%;
+
+  margin-left: -2px;
+  margin-top: -1px;
+
+  width: 10px;
+  height: 1px;
+
+  background: url(../img/dash.png) no-repeat;
 }
+
               /*Фильтр "Производители"*/
 .selection-brand {
   border-top: 1px solid #e5e5e5;

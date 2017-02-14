@@ -3,7 +3,8 @@
 	<head>
 	  <meta charset="utf-8">
 	  <title>Техномарт</title>
-	  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
 	  <link rel="stylesheet" href="css/normalize.css">
 	  <link rel="stylesheet" href="css/style.css">
 	</head>
@@ -27,7 +28,7 @@
 					<section class="userblock right">
 					<ul>
 						<li><a href="#" class="user-bookmarks">Закладки:</a></li>
-						<li><a href="#" class="user-basket">Корзина:</a></li>
+						<li><a href="#" class="user-basket user-basket-red">Корзина:</a></li>
 						<li><a href="#" class="checkout">Оформить заказ</a></li>
 					</ul>
 					</section>
@@ -116,9 +117,9 @@
 								<div class="toggle min-toggle"></div>
 								<div class="toggle max-toggle"></div>
 							</div>
-							<div class="price-controls">
-								<label><input type="text" class="min-price" value="0"> &mdash;  </label>
-								<label><input type="text" class="max-price" value="30000"></label>
+							<div class="price-controls clearfix">
+								<input type="text" class="min-price left" value="0">
+								<input type="text" class="max-price right" value="30000">
 							</div>
 						</section>
 						<section class="selection-brand">

@@ -3,7 +3,8 @@
 	<head>
 	  <meta charset="utf-8">
 	  <title>Техномарт</title>
-	  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
 	  <link rel="stylesheet" href="css/normalize.css">
 	  <link rel="stylesheet" href="css/style.css">
 	</head>
@@ -345,5 +346,12 @@
 				</div>	
 			</section>	
 		</footer>
+		<script>
+			var link = document.querySelector(".geolocation-company .map");
+			link.addEventListener("click", function(event) {
+				event.preventDefault();
+				console.log ("Клик по ссылке карты");
+			});
+		</script>
 	</body>
 </html>
