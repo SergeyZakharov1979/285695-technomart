@@ -259,6 +259,7 @@ body h2 {
 
 .header-search button {
   position: absolute;
+  top: 0;
   
   width: 49px;
   height: 42px;
@@ -317,6 +318,8 @@ body h2 {
 
 .header-search input:focus ~ button::after {
   background-position: -10px -374px;
+
+  opacity: 1;
 }
                 /*Пользовательский блок*/
 .userblock {
@@ -1559,7 +1562,7 @@ body h2 {
   margin-left: -470px;
   margin-top: -223px;
 
-  background: #e9e5dc url("../img/infomation-map-popap.jpg");
+  background: #e9e5dc url("../img/infomation-map-popap.jpg") center center no-repeat;
 
   box-shadow: 0 0 16px  rgba(0, 0, 0, 0.5);
 
@@ -1581,6 +1584,12 @@ body h2 {
   background-color: transparent;
   border: 0;
   cursor: pointer;
+}
+
+.modal-content-close:active {
+  outline:none;
+
+  opacity: 0.3;
 }
 
 .modal-content-close::before,
@@ -1606,12 +1615,14 @@ body h2 {
   z-index: 100;
 }
 
-
+.modal-content-map-show {
+  display: block;
+}
 /*===================================================
                   Модальное окно: Напишите Нам
 =====================================================*/
 
-.write-us input::-webkit-input-placeholder {
+/*.write-us input::-webkit-input-placeholder {
     color: #ccc;
    } 
 
@@ -1633,7 +1644,7 @@ body h2 {
  
 .write-us:focus:-ms-input-placeholder {
   color: transparent;
-}
+}*/
 
 
 .write-us {
@@ -1767,6 +1778,10 @@ body h2 {
   background-color: #ba2732;
 }
 
+.write-us-show {
+  display: block;
+}
+
 /*===================================================
       Модальное окно: Товар добавлен в корзину
 =====================================================*/
@@ -1794,7 +1809,6 @@ body h2 {
   box-shadow: 0 20px 40px rgba(41, 52, 73, 0.75);
   z-index: 99;
 }
-
 
 .items-in-cart .wrap {
   position: relative;
