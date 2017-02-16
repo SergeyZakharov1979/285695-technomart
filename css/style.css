@@ -180,7 +180,11 @@ body h2 {
 =====================================================*/
 
 .main-header {
-	margin-bottom: 80px;
+  height: 320px;
+
+	margin-bottom: 20px;
+
+  background-color: #f2f6f8;
 }
                 /*Верхняя блок шапки*/
 .main-header-top {
@@ -454,13 +458,11 @@ body h2 {
 .main-header-middle {
   min-height: 158px;
 
-  background: #fff url(../img/header-middle-bg.png);
-
   color: #000;
 }
                 /*Блок описания сайта*/
 .site-description {
-  width: 300px;
+  width: 270px;
 
   padding-top: 50px;
   padding-left: 52px;
@@ -472,23 +474,27 @@ body h2 {
 }
                   /*Блок контакты*/
 .contacts {
-  width: 300px;
+  width: 270px;
 
   font: 14px/24px "Cuprum", "Arial", sans-serif;
 
   color: #32425c;
 
-  margin-right: 20px;
+  margin-left: 30px;
 }
 
 .contacts-tel {
   position: relative;
+  height: 45px;
+  
+    
+  margin-top: 46px;
+  padding: 9px 0;
+  padding-left: 71px;
 
-  padding-top: 59px;
-  padding-left: 75px;
+  border: 3px solid #fff;
 
   font: 21px/21px "Cuprum", "Arial", sans-serif;
-
   color: #e9292a;
 }
 
@@ -496,8 +502,8 @@ body h2 {
   content:"";
 
   position: absolute;
-  top: 59px;
-  left: 15px;
+  top: 10px;
+  left: 14px;
 
   width: 19px;
   height: 19px;
@@ -511,12 +517,11 @@ body h2 {
 
 .contacts-adress {
   padding-left: 10px;
-  padding-top: 15px;
+  padding-top: 4px;
 }
         /*Блок регистрации и авторизации пользователя*/
 .user-autorization {
-  width: 300px;
-  min-height: 119px;
+  width: 290px;
 
   font-size: 0;
 }
@@ -526,16 +531,17 @@ body h2 {
 
   display: inline-block;
 
-  width: 150px;
-  height: 41px;
+  height: 45px;
 
-  padding-left: 15px;
-  padding: 10px;
-  margin-top: 48px;
+  margin-top: 46px;
+  margin-left: 10px;
+  padding: 12px 0;
 
   font: 21px/21px "Cuprum", "Arial", sans-serif;
   text-decoration: none;
 
+  background-color: #fff;
+  
   color: #000;
 }
 
@@ -548,22 +554,28 @@ body h2 {
   opacity: 0.3;
 }
 
-.user-autorization a:last-child {
+.user-autorization a.registration {
   padding-left: 25px;
   padding-right: 20px;
   
 }
 
-.user-autorization a:first-child {
-  padding-left: 67px;
+.user-autorization a.login {
+  padding-left: 48px;
+  padding-right: 23px;
 }
 
-.user-autorization a:first-child::before {
+.user-autorization a.registration {
+  padding-right: 25px;
+  padding-left: 24px;
+}
+
+.user-autorization a.login::before {
   content:"";
 
   position: absolute;
-  top: 11px;
-  left: 33px;
+  top: 14px;
+  left: 13px;
 
   width: 20px;
   height: 17px;
@@ -573,19 +585,17 @@ body h2 {
   background-position: -10px -189px;
 }
 
-.user-autorization a:first-child:hover::before {
+.user-autorization a.login:hover::before {
   background-position: -10px -226px;
 }
 /*Пользовательский блок и вход в личный кабинет*/
 .user-login {
   width: 300px;
-  
-  padding-top: 48px;
+
+  padding-top: 46px;
 
   font-size: 0;
-
-  background-color: #fff;
-
+  
   color: #000;
 }
 
@@ -600,15 +610,18 @@ body h2 {
   position: relative;
 
   display: inline-block;
-  width: 240px;
-  height: 41px;
   
-  padding:10px;
+  width: 240px;
+  height: 45px;
+  
+  padding:12px;
   padding-left: 48px;
   padding-right: 0;
   
   font: 21px/21px "Cuprum", "Arial", sans-serif;
   text-decoration: none;
+
+  background-color: #fff;
 
   color: #000;
 }
@@ -621,7 +634,7 @@ body h2 {
   content: "";
 
   position: absolute;
-  top: 10px;
+  top: 12px;
   left: 15px;
 
   width: 20px;
@@ -646,20 +659,23 @@ body h2 {
 
   display: inline-block;
   width: 60px;
-  height: 41px;
+  height: 45px;
 
   padding: 10px;
   
   font-size: 0;
   text-indent: -1000px;
+  overflow: hidden;
+
+  background-color: #fff;
 }
 
 .user-login a.exit::before {
   content: "";
 
   position: absolute;
-  top: 11px;
-  left: 30px;
+  top: 14px;
+  left: 29px;
 
   width: 21px;
   height: 17px;
@@ -678,7 +694,7 @@ body h2 {
 }
 
 .personal-area-login {
-   padding-top: 10px;
+   padding-top: 8px;
 }
 
                 /*Кнопка Мои заказы*/
@@ -1041,8 +1057,8 @@ body h2 {
 
 .products-item .product-action {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 3px;
+  left: 1px;
 
   width: 218px;
   height: 168px;
@@ -1056,10 +1072,10 @@ body h2 {
 .products-item .product-action .to-bookmarks {
   position: relative;
   display: block;
-  width: 129px;
+  width: 135px;
 
   margin: 0 auto;
-  margin-bottom: 7px;
+  margin-bottom: 8px;
   padding: 7px 0;
 
   border:3px solid #63a63e;
@@ -1135,6 +1151,8 @@ body h2 {
 .products-item-img {
     width: 218px;
     height: 168px;
+
+    margin-top: 1px;
 }
 
 .products-item-img img {
@@ -1159,7 +1177,7 @@ body h2 {
 .products-item .old-price {
     min-height: 20px;
 
-    margin-top: 9px;
+    margin-top: 10px;
     margin-bottom: 10px;
 
     font: bold 17px/20px "PT Sans", "Arial", sans-serif;
@@ -1176,6 +1194,7 @@ body h2 {
 
   margin: 0 auto;
   margin-top: -2px;
+  margin-left: 41px;
   padding: 10px 30px;
 
   font: bold 17px/20px "PT Sans", "Arial", sans-serif;
@@ -1205,7 +1224,7 @@ body h2 {
 =====================================================*/
 
 .popular-brand {
-  margin-bottom: 111px;
+  margin-bottom: 46px;
 }
 
 .brand-header {
@@ -1284,17 +1303,23 @@ body h2 {
 =====================================================*/
 
 .main-services {
-  margin-bottom: 155px;
+  min-height: 307px;
+
+  margin-bottom: 55px;
+  padding-top: 40px;
+  padding-bottom: 100px;
 
   font: 13px/24px "PT Sans", "Arial", sans-serif;
 
-  background-color: #fff;
+  background-color: #f2f6f8;
 
   color: #000;
 }
 
 .services-slogan {
-  margin-bottom: 68px;
+  margin-bottom: 69px;
+
+  letter-spacing: 0.05px;
 }
 
 .services-slogan h2 {
@@ -1317,6 +1342,7 @@ body h2 {
   padding: 0;
   margin: 0;
   margin-right: 81px;
+  margin-top: -1px;
   
   list-style:none;
 
@@ -1371,17 +1397,19 @@ body h2 {
 .services-galery a:hover {
   background-color: #293449;
 }
-
-.services-galery a.action:hover {
+ /*Стили сервисов:; Доставка, Гарантия, Кредит*/
+.delivery-slide a.action:hover,
+.guarantee-slide a.action:hover,
+.credit-slide a.action:hover {
   background-color: #fff;
 }
 
-.galery-content {
+.delivery, .guarantee, .credit {
   position: relative;  
 }
 
-.galery-content h3 {
-  margin-top: 0;
+.delivery h3, .guarantee h3, .credit h3 {
+  margin-top: -3px;
   margin-bottom: 25px;
 
   font: 36px/36px "Cuprum", "Arial", sans-serif;
@@ -1390,17 +1418,27 @@ body h2 {
   color: #32425c;
 }
 
-.credit,
-.guarantee {
+.guarantee-slide,
+.credit-slide {
   display: none;
 }
-      /*Стили сервисов:; Доставка, Гарантия, Кредит*/
-.galery-content .delivery::after {
+
+.delivery-slide {
+  display: block;
+
+  letter-spacing: 0.06px;
+}
+
+.guarantee {
+  margin-bottom: -10px;
+}
+     
+.delivery-slide .delivery::after {
   content:"";
 
   position: absolute;
-  top: 25px;
-  left: 150px;
+  top: 23px;
+  left: 149px;
 
   width: 468px;
   height: 261px;
@@ -1409,11 +1447,11 @@ body h2 {
   background-repeat: no-repeat;
 }
 
-.galery-content .guarantee::after {
+.guarantee-slide .guarantee::after {
   content:"";
 
   position: absolute;
-  top: 2px;
+  top: 1px;
   left: 238px;
 
   width: 389px;
@@ -1423,7 +1461,7 @@ body h2 {
   background-repeat: no-repeat;
 }
 
-.galery-content .credit::after {
+.credit-slide .credit::after {
   content:"";
 
   position: absolute;
@@ -1437,7 +1475,7 @@ body h2 {
   background-repeat: no-repeat;
 }
 
-.galery-content .credit a.btn {
+.credit-slide .credit a.btn {
   display: inline-block;
 
   width: 194px;
@@ -1445,7 +1483,7 @@ body h2 {
   height: 38px;
 
   padding: 10px;
-  margin-top: 12px;
+  margin-top: 14px;
 
   border: none;
 
@@ -1461,11 +1499,11 @@ body h2 {
   border-radius: 3px;
 }
 
- .galery-content .credit a.btn:hover {
+ .credit-slide .credit a.btn:hover {
   background-color: #ca2c37;
 }
 
- .galery-content .credit a.btn:active {
+ .credit-slide .credit a.btn:active {
   background-color: #ba2732;
 }  
 
@@ -1474,7 +1512,7 @@ body h2 {
 =====================================================*/
 
 .description-geolocation {
-  padding-bottom: 30px;
+  padding-bottom: 85px;
 
   background-color: #fff;
 
@@ -1482,7 +1520,7 @@ body h2 {
 }
 
 .description-geolocation h2 {
-  margin-bottom: 27px;
+  margin-bottom: 26px;
   margin-left: 0;
 
   font: 30px/30px "Cuprum", "Arial", sans-serif;
@@ -1498,6 +1536,15 @@ body h2 {
   font: 13px/24px "PT Sans", "Arial", sans-serif;
 
   margin-bottom: 24px;
+  
+}
+
+.description-geolocation p.par1 {
+  letter-spacing: 0.13px;
+}
+
+.description-geolocation p.par2 {
+  letter-spacing: 0.06px;
 }
 
 .description-company ul {
@@ -1536,6 +1583,8 @@ body h2 {
 
 .description-company .btn {
   width: 220px;
+
+  padding-top: 11px;
 }
 
 .geolocation-company p {
@@ -1544,6 +1593,8 @@ body h2 {
 
 .geolocation-company .btn {
   width: 300px;
+
+  padding-top: 12px;
 }
 
 /*===================================================
@@ -1622,18 +1673,6 @@ body h2 {
                   Модальное окно: Напишите Нам
 =====================================================*/
 
-/*.write-us input::-webkit-input-placeholder {
-    color: #ccc;
-   } 
-
-.write-us input::-moz-placeholder {
-    color: #ccc;
-   }
-
-.write-us:focus::-webkit-input-placeholder {
-  color: transparent;
-}
- 
 .write-us:focus::-moz-placeholder {
   color: transparent;
 }
@@ -1644,7 +1683,7 @@ body h2 {
  
 .write-us:focus:-ms-input-placeholder {
   color: transparent;
-}*/
+}
 
 
 .write-us {
@@ -1952,8 +1991,8 @@ body h2 {
               Меню навигации "Хлебные крошки
 =====================================================*/
 .breadcrumbs {
-  margin-bottom: 48px;
-
+  margin-bottom: 19px;
+  
   font: 13px/18px "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
 
@@ -1968,20 +2007,19 @@ body h2 {
 }
 
 .breadcrumbs li {
+  position: relative;
+
   display: inline-block;
-  margin-right: 40px;
-}
+  margin-right: 37px;
 
-.breadcrumbs li:first-child {
-  margin-right: 0;
-}
-
-.breadcrumbs li:nth-child(2) {
-  margin-left: 50px;
-  
+  letter-spacing: 0.06px;
 }
 
 .breadcrumbs a {
+  position: relative;
+
+  display: block;
+
   font: 13px/18px "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
@@ -1990,17 +2028,18 @@ body h2 {
 }
 
 .breadcrumbs a.home {
-  position: relative;
-
-  font-size: 0;
+  width: 15px;
+  height: 15px;
+  
   text-indent: -1000px;
+  overflow: hidden;
 }
 
 .breadcrumbs a.home::before {
   content: "";
 
   position: absolute;
-  top: -12px;
+  top: 2px;
   left: 0;
 
   width: 15px;
@@ -2011,13 +2050,69 @@ body h2 {
   background-position: -10px -120px; 
 }
 
+.breadcrumbs li:first-child::after {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 28px;
+  margin-top: -6px;
+  
+
+  width: 8px;
+  height: 12px;
+
+  background: url("../img/icon-arrow-right.png") no-repeat;
+}
+
+.breadcrumbs a.cat::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 68px;
+
+  width: 8px;
+  height: 12px;
+
+  background: url("../img/icon-arrow-right.png") no-repeat;
+}
+
+.breadcrumbs a.tool::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 96px;
+ 
+  width: 8px;
+  height: 12px;
+
+  background: url("../img/icon-arrow-right.png") no-repeat;
+}
+
+h2.drills {
+  display: block;
+  height: 89px;
+  width: 100%;
+
+  margin: 0;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 29px;
+  padding-left: 30px;
+
+  background-color: #f2f6f8;
+}
+
 /*===================================================
               Блок сортировки каталога
 =====================================================*/
 
 .catalog-sorting {
+  width: 700px;
+
   min-height: 38px;
-  margin-top: 47px;
   margin-bottom: 20px;
   padding: 10px 0; 
 
@@ -2027,6 +2122,7 @@ body h2 {
   background: #f7f3ec url(../img/catalog-sorting-bg.png);
 
   color: #000;
+  border-radius: 5px;
 }
 
 .catalog-sorting h2 {
@@ -2053,20 +2149,6 @@ body h2 {
   list-style: none;
 
   font-size: 0;
-}
-
-.catalog-sorting span:first-child::after {
-  content: "";
-
-  position: absolute;
-
-  top: -9px;
-  left: 200px;
-
-  width: 20px;
-  height: 38px;
-
-  background-color: #fff;
 }
 
 .catalog-sorting li {
@@ -2189,6 +2271,23 @@ body h2 {
   margin-right: 20px;
 }
 
+.catalog-sidebar span.filter {
+  display: block;
+  width: 220px;
+  height: 38px;
+
+  padding: 10px 0;
+  padding-left: 20px;
+  margin-bottom: 18px;
+
+  font: 13px/18px "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+
+  background-color: #f7f3ec;
+  border-radius: 3px;
+  color: #000;
+}
+
 .catalog-sidebar span {
   font: bold 17px/30px "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;  
@@ -2203,8 +2302,9 @@ body h2 {
   width: 220px;
   min-height: 127px;
 
-  margin-top: 16px;
+  margin-top: 18px;
   margin-bottom: 25px;
+  border-radius: 5px;
 }
 
 .range-controls {
@@ -2214,7 +2314,7 @@ body h2 {
 
   padding: 39px 20px;
   
-  margin-bottom: 6px;
+  margin-bottom: 9px;
 
   background-color: #f7f3ec;
 
@@ -2259,12 +2359,12 @@ body h2 {
 .range-controls .min-toggle::before {
   content: "";
 
-  left: 18px;
+  left: 21px;
 }
 
 .range-controls .max-toggle::before {
   content: "";
-  left: 168px;
+  left: 161px;
 }
 
 .price-controls {
@@ -2281,20 +2381,21 @@ body h2 {
 
 .price-controls input {
   position: relative;
-
   display: block;
 
   width: 95px;
-  height: 41px;
+  height: 38px;
 
-  padding: 8px 10px;
+  padding: 10px 10px;
+  padding-top: 8px;
+
   font: 17px/18px "PT Sans", "Arial", sans-serif;
   text-align: center;
 
   background-color: #f7f3ec;
   border: none;
-
   color: #000;
+  border-radius: 5px;
 }
 
 .price-controls::before {
@@ -2378,13 +2479,14 @@ body h2 {
 .selection-power {
   border-top: 1px solid #e5e5e5;
 
-  margin-bottom: 77px;
+  margin-bottom: 79px;
 }
 
 .selection-power > span {
   display: inline-block;
   margin-top: 16px;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
+  letter-spacing: 0.5px;
 }
 
 .selection-power ul {
@@ -2453,6 +2555,7 @@ body h2 {
   padding: 10;
 
   border: 1px solid #e5e5e5;
+  border-radius: 5px;
 
   font: 13px/18px "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
@@ -2473,7 +2576,7 @@ body h2 {
   margin-bottom: 31px;
 }
 
-.catalog .products-item:nth-child(3n) {
+.catalog article.products-item:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -2485,7 +2588,7 @@ body h2 {
   width: 100%;
 
   margin-left: 240px;
-  margin-bottom: 101px;
+  margin-bottom: 36px;
 }
 
 .catalog-pagination ul {
@@ -2560,20 +2663,34 @@ body h2 {
 /*===================================================
                 Описание страницы
 =====================================================*/
+.list-description {
+  min-height: 261px;
+
+  margin-bottom: -13px;
+
+  background-color: #f2f6f8;
+}
+
 .list-description h2 {
   margin-left: 0;
   margin-bottom: 26px;
+  padding-top: 65px;
 
   font: 30px/30px "Cuprum", "Arial", sans-serif;
-
+  letter-spacing: 0.18px;
   color: #000;
 }
 
 .list-description p {
   font: 13px/24px "PT Sans", "Arial", sans-serif;
+  letter-spacing: 0.14px;
 
   color: #000;
  } 
+
+ .list-description span {
+  letter-spacing: 0.03px;
+ }
 
 /*===================================================
                       Подвал сайта
@@ -2581,8 +2698,6 @@ body h2 {
               /*Верхняя часть подвала*/
 .main-footer {
   min-height: 300px;
-
-  margin-top: 56px;
 }
 
 .footer-top {

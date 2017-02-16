@@ -34,10 +34,9 @@
 					</section>
 				</div>
 			</section>
-			<!--Центровочный блок средней и нижней секций шапки-->
-			<div class="container">
-				<!--Средний блок шапки-->
-				<section class="main-header-middle clearfix">
+			<!--Средний блок шапки-->
+			<section class="main-header-middle clearfix">
+				<div class="container">
 					<!--Блок описания сайта-->
 					<section class="site-description left">
 						Интернет-магазин<br>
@@ -57,27 +56,29 @@
 						<a href="#" class="name">Равшан Джамшутович</a>
 						<a href="#" class="exit">Exit</a>
 						<div class="personal-area-login">
-						<a href="#" class="my-order">Мои заказы</a>
-						<a href="#" class="personal-area">Личный кабинет</a>
+							<a href="#" class="my-order">Мои заказы</a>
+							<a href="#" class="personal-area">Личный кабинет</a>
 						</div>
 					</section>
-				</section>
-				<!--Нижний блок шапки-->
-				<section class="main-header-bottom">
-					<!--Меню навигации сайта-->
-					<nav class="main-menu">
-						<ul>
-							<li><a href="index.html">Главная</a></li>
-							<li><a href="#">Компания</a></li>
-							<li><a href="#">Каталог</a></li>
-							<li><a href="#">Новости</a></li>
-							<li><a href="#">Спецпредложения</a></li>
-							<li><a href="#">Доставка</a></li>
-							<li><a href="#">Контакты</a></li>
-						</ul>
-					</nav>
-				</section>
-			</div>
+				</div>
+			</section>
+			<div class="container">
+			<!--Нижний блок шапки-->
+			<section class="main-header-bottom">
+				<!--Меню навигации сайта-->
+				<nav class="main-menu">
+					<ul>
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="#">Компания</a></li>
+						<li><a>Каталог</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Спецпредложения</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>	
+			</section>
+			</div>	
 		</header>
 		<!--Конец шапки сайта-->
 		<!--Основной блок сайта-->
@@ -87,26 +88,15 @@
 				<nav class="breadcrumbs">
 					<ul>
 						<li><a href="index.html" class="home">Home</a></li>
-						<li><a href="#">Каталог</a></li>
-						<li><a href="#">Инструмент</a></li>
+						<li><a href="#" class="cat">Каталог</a></li>
+						<li><a href="#" class="tool">Инструмент</a></li>
 						<li>Перфораторы</li>
 					</ul>
 				</nav>
-				<h2>Перфораторы</h2>
-				<!--Блок сортировки каталога-->
-				<section class="catalog-sorting clearfix">
-					<span class="left">Фильтр:</span>
-					<span class="left">Сортировка:</span>			
-					<ul class="right">
-						<li><a href="#" class="price active">По цене</a></li>
-						<li><a href="#" class="type">По типу</a></li>
-						<li><a href="#" class="functional">По функционалу</a></li>
-						<li><a href="#" class="up">up</a></li>
-						<li><a href="#" class="down">down</a></li>
-					</ul>
-				</section>
+				<h2 class="drills">Перфораторы</h2>
 				<!--Сайдбар с фильтром каталога-->
 				<section class="catalog-sidebar left">
+				<span class="filter">Фильтр:</span>
 					<form action="https://echo.htmlacademy.ru" class="form-filter">
 						<span class="price">Цена:</span>
 						<section class="range-filters">
@@ -141,6 +131,17 @@
 						</section>
 						<button type="submit">Показать</button>
 					</form>
+				</section>
+				<!--Блок сортировки каталога-->
+				<section class="catalog-sorting right">
+					<span class="sorting">Сортировка:</span>			
+					<ul class="right">
+						<li><a href="#" class="price active">По цене</a></li>
+						<li><a href="#" class="type">По типу</a></li>
+						<li><a href="#" class="functional">По функционалу</a></li>
+						<li><a href="#" class="up">up</a></li>
+						<li><a href="#" class="down">down</a></li>
+					</ul>
 				</section>
 				<!--Каталог товаров-->
 				<section class="catalog right">
@@ -202,6 +203,7 @@
 						<div class="new-price">15500 Р.</div>	
 					</article>	
 					<article class="products-item">
+						<div class="flag flag-new">новинка</div>
 						<section class="product-action">
 							<a href="#" class="buy">Купить</a>
 							<a href="#" class="to-bookmarks">В закладки</a>
@@ -216,7 +218,6 @@
 						<div class="new-price">25500 Р.</div>
 					</article>	
 					<article class="products-item">
-						<div class="flag flag-new">новинка</div>
 						<section class="product-action">
 							<a href="#" class="buy">Купить</a>
 							<a href="#" class="to-bookmarks">В закладки</a>
@@ -231,6 +232,7 @@
 						<div class="new-price">12500 Р.</div>
 					</article>
 					<article class="products-item">
+						<div class="flag flag-new">новинка</div>
 						<section class="product-action">
 							<a href="#" class="buy">Купить</a>
 							<a href="#" class="to-bookmarks">В закладки</a>
@@ -259,7 +261,6 @@
 						<div class="new-price">25500 Р.</div>
 					</article>	
 					<article class="products-item">
-						<div class="flag flag-new">новинка</div>
 						<section class="product-action">
 							<a href="#" class="buy">Купить</a>
 							<a href="#" class="to-bookmarks">В закладки</a>
@@ -283,12 +284,14 @@
 						<li><a href="#" class="next-page">Следующая</a></li>
 					</ul>
 				</section>
-				<section class="list-description left">
-					<h2>Пара слов о перфораторах</h2>
-					<p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
-					Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
-				</section>				
 			</div>
+			<section class="list-description">
+				<div class="container">
+					<h2>Пара слов о перфораторах</h2>
+					<p><span>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.</span><br>
+					Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+				</div>	
+			</section>				
 			<!--Модальное окно: Товар добавлен в корзину-->
 			<section class="items-in-cart">
 				<div class="wrap">

@@ -15,7 +15,8 @@ closemap.addEventListener("click", function(event) {
 var viewwrite = document.querySelector(".geolocation-company .btn");
 var popwrite = document.querySelector(".write-us");
 var closewrite = document.querySelector(".write-us .btn-close");
-var writename = document.querySelector("[name=name]");
+var writename = popwrite.querySelector("[name=name]");
+var form = popwrite.querySelector("form");
 
 viewwrite.addEventListener("click", function(event) {
 	event.preventDefault();
