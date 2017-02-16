@@ -264,6 +264,7 @@ body h2 {
 .header-search button {
   position: absolute;
   top: 0;
+  left: 0;
   
   width: 49px;
   height: 42px;
