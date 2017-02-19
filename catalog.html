@@ -130,19 +130,23 @@
 							<li><label><input type="radio" name="power"><span class="radio-indicator"></span>Сетевые</label></li>
 							</ul>
 						</section>
-						<button type="submit" name="show">Показать</button>
+						<button class="form-btn" type="submit" name="show">Показать</button>
 					</form>
 				</section>
 				<!--Блок сортировки каталога-->
 				<section class="catalog-sorting right">
-					<div class="sorting-name left"><span class="sorting">Сортировка:</span></div>			
-					<ul class="right">
-						<li><a href="#" class="catalog-sorting-price catalog-sorting-active">По цене</a></li>
-						<li><a href="#" class="catalog-sorting-type">По типу</a></li>
-						<li><a href="#" class="catalog-sorting-functional">По функционалу</a></li>
-						<li><a href="#" class="catalog-sorting-up">up</a></li>
-						<li><a href="#" class="catalog-sorting-down">down</a></li>
-					</ul>
+					<div class="wrap-sorting-catalog clearfix">
+						<div class="sorting-name left"><span class="sorting">Сортировка:</span></div>
+						<ul class="catalog-sorting-filter left">
+							<li><a href="#" class="catalog-sorting-price catalog-sorting-active">По цене</a></li>
+							<li><a href="#" class="catalog-sorting-type">По типу</a></li>
+							<li><a href="#" class="catalog-sorting-functional">По функционалу</a></li>
+						</ul>
+						<ul class="catalog-sorting-arrow right">
+							<li><a href="#" class="catalog-sorting-up">up</a></li>
+							<li><a href="#" class="catalog-sorting-down">down</a></li>
+						</ul>
+					</div>	
 				</section>
 				<!--Каталог товаров-->
 				<section class="catalog right">
@@ -323,8 +327,8 @@
 						</p>
 					</section>
 					<!--Меню нижнее-->
-					<nav class="footer-menu-bottom right">
-						<ul>
+					<div class="footer-menu-bottom right">
+						<nav>
 							<li><a href="#">Материалы</a></li>
 							<li><a href="#">Техника</a></li>
 							<li><a href="#">Инструмент</a></li>
@@ -376,5 +380,6 @@
 				</div>
 			</div>
 		</section>
+		<script src="js/script.js"></script>
 	</body>
 </html>

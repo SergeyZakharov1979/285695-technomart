@@ -1,5 +1,5 @@
 body {
-  min-width: 960px;
+  min-width: 940px;
 
   font: 13px/18px "PT Sans", "Arial", sans-serif;
   color: #000;
@@ -7,11 +7,11 @@ body {
   background: #fff url("../img/body-bg.png");
 }
 
-* {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-       -o-box-sizing: border-box;
-         -box-sizing: border-box;
+* { 
+ -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+      -o-box-sizing: border-box;
+         box-sizing: border-box;
 }
 
 /*===================================================
@@ -184,14 +184,14 @@ body {
 =====================================================*/
 
 .main-header {
-  height: 320px;
+  min-height: 320px;
 	margin-bottom: 20px;
 
   background-color: #f2f6f8;
 }
                 /*Верхний блок шапки*/
 .main-header-top {
-	height: 42px;
+	min-height: 42px;
 
   color: #fff;
 
@@ -199,16 +199,17 @@ body {
 }
 
 .header-logo {
+  width: 220px;
+  min-height: 42px;
   color: #fff;
-
   background-color: #ee3643;
 }
 
 .header-logo a {
   display: block;
   width: 220px;
-  height: 42px;
-  padding: 12px 0;
+  min-height: 42px;
+  padding: 9px 50px;
 
   font: 24px/24px "Cuprum", "Arial", sans-serif;
   text-align: center;
@@ -467,7 +468,9 @@ a.user-basket-red {
                 /*Блок описания сайта*/
 .site-description {
   width: 270px;
+  min-height: 158px;
   padding-top: 50px;
+  padding-bottom: 39px;
   padding-left: 52px;
   margin-right: 20px;
 
@@ -486,7 +489,7 @@ a.user-basket-red {
 .contacts-tel {
   position: relative;
 
-  height: 45px; 
+  min-height: 45px; 
   margin-top: 46px;
   padding: 9px 0;
   padding-left: 71px;
@@ -518,7 +521,7 @@ a.user-basket-red {
         /*Блок регистрации и авторизации пользователя*/
 .user-autorization {
   width: 290px;
-
+  
   font-size: 0;
 }
 
@@ -526,7 +529,6 @@ a.user-basket-red {
   position: relative;
 
   display: inline-block;
-
   height: 45px;
   margin-top: 46px;
   margin-left: 10px;
@@ -610,6 +612,10 @@ a.user-login-name {
   font: 21px/21px "Cuprum", "Arial", sans-serif;
   text-decoration: none;
   color: #000;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 
   background-color: #fff;
 }
@@ -1029,7 +1035,7 @@ button.galery-next {
   background: url("../img/promo-flag-new.png") no-repeat 0 0;
 }
 
-.products-pop .products-item:last-child {
+.wrap-pop-products .products-item:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -1253,17 +1259,25 @@ button.galery-next {
   margin-right: 0;
 } 
 
-
 .popular-brand li:hover {
-  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);  
+  -webkit-box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+     -moz-box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+       -o-box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+          box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);  
 }
 
 .popular-brand li:active {
-  box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
+  -webkit-box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
+     -moz-box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
+       -o-box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
+          box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
 }
 
-.popular-brand li:active img {
-  opacity: 0.3;  
+.popular-brand img:active  {
+  -webkit-opacity: 0.3;
+     -moz-opacity: 0.3;
+       -o-opacity: 0.3;
+          opacity: 0.3;  
 }
 
 .popular-brand img {
@@ -1983,6 +1997,14 @@ input[type="radio"]:disabled {
   background: none;
 }
 
+button.form-btn:active {
+  outline: none;
+}
+
+button.form-btn:focus {
+  outline: none;
+}
+
 /*===================================================
               Блок сортировки каталога
 =====================================================*/
@@ -1993,7 +2015,7 @@ input[type="radio"]:disabled {
   min-height: 38px;
   margin-bottom: 20px;
   padding: 10px 20px;
-  padding-right: 15px; 
+  padding-right: 17px; 
 
   font: 13px/18px "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
@@ -2006,18 +2028,18 @@ input[type="radio"]:disabled {
 
 .sorting-name {
   width: 220px;
-  padding-right: 20px;
 }
 
-.catalog-sorting ul {
-  width: 445px;
+.catalog-sorting-filter {
+  width: 390px;
   margin: 0;
   padding: 0;
+
   list-style: none;
   font-size: 0;
 }
 
-.catalog-sorting li {
+.catalog-sorting-filter li {
   display: inline-block;
   margin-right: 71px;
 
@@ -2025,24 +2047,33 @@ input[type="radio"]:disabled {
   vertical-align: top;
 }
 
-.catalog-sorting li:nth-child(2) {
-  margin-right: 66px;
+.catalog-sorting-filter li:nth-child(2) {
+  margin-right: 65px;
 }
 
-.catalog-sorting li:nth-child(3) {
-  margin-right: 46px;
+.catalog-sorting-filter li:last-child {
+  margin-right: 0px;
 }
 
-.catalog-sorting li:nth-child(4), 
-.catalog-sorting li:nth-child(5) {
-  width: 11px;
-  height: 10px;
-  margin-top: 5px;
+.catalog-sorting-arrow {
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+  font-size: 0;
+}
+
+.catalog-sorting-arrow li {
+  display: inline-block;
+  width: 10px;
+  height: 18px;
   margin-right: 0;
+
+  vertical-align: bottom;
 }
 
-.catalog-sorting li:nth-child(4) {
-  margin-right: 21px;
+.catalog-sorting-arrow li:last-child {
+  margin-left: 22px;
 }
 
 .catalog-sorting a {
@@ -2056,7 +2087,7 @@ input[type="radio"]:disabled {
   border-bottom: 1px dotted #ee3643;
 }
 
-.catalog-sorting a:hover {
+.catalog-sorting-filter a:hover {
   color: #000;
 
   border-bottom: 1px solid #ee3643;
@@ -2083,11 +2114,12 @@ a.catalog-sorting-active:hover {
   color: #000;
 }
 
+
 a.catalog-sorting-up::before {
   content: "";
   
   position: absolute;
-  bottom: 7px;
+  top: 0;
   left: 0;
 
   border: 5px solid transparent;
@@ -2098,7 +2130,7 @@ a.catalog-sorting-up:hover::before {
   content: "";
   
   position: absolute;
-  bottom: 7px;
+  top: 0;
   left: 0;
 
   border: 5px solid transparent;
@@ -2109,7 +2141,7 @@ a.catalog-sorting-down::before {
   content: "";
   
   position: absolute;
-  bottom: 2px;
+  top: 5px;
   left: 0;
 
   border: 5px solid transparent;
@@ -2120,7 +2152,7 @@ a.catalog-sorting-down:hover::before {
   content: "";
   
   position: absolute;
-  bottom: 2px;
+  top: 5px;
   left: 0;
 
   border: 5px solid transparent;
@@ -2322,6 +2354,8 @@ a.catalog-pagination-active:active {
   display: inline-block;
   height: 44px;
   margin-left: 59px;
+
+  vertical-align: top;
 }
 
 .footer-menu-top li:first-child {
@@ -2372,10 +2406,20 @@ a.catalog-pagination-active:active {
   display: inline-block;
   height: 44px;
   margin-left: 59px;
+
+  vertical-align: top;
+}
+
+.footer-menu-bottom li:nth-child(4) {
+  margin-left: 57px;
 }
 
 .footer-menu-bottom li:first-child {
-  margin-left: 37px;
+  margin-left: 35px;
+}
+
+.footer-menu-bottom li:last-child {
+  margin-right: 0;
 }
 
 .footer-menu-bottom a {
