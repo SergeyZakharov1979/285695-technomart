@@ -184,14 +184,14 @@ body {
 =====================================================*/
 
 .main-header {
-  height: 320px;
+  min-height: 320px;
 	margin-bottom: 20px;
 
   background-color: #f2f6f8;
 }
                 /*Верхний блок шапки*/
 .main-header-top {
-	height: 42px;
+	min-height: 42px;
 
   color: #fff;
 
@@ -199,16 +199,17 @@ body {
 }
 
 .header-logo {
+  width: 220px;
+  min-height: 42px;
   color: #fff;
-
   background-color: #ee3643;
 }
 
 .header-logo a {
   display: block;
   width: 220px;
-  height: 42px;
-  padding: 12px 0;
+  min-height: 42px;
+  padding: 9px 50px;
 
   font: 24px/24px "Cuprum", "Arial", sans-serif;
   text-align: center;
@@ -467,7 +468,9 @@ a.user-basket-red {
                 /*Блок описания сайта*/
 .site-description {
   width: 270px;
+  min-height: 158px;
   padding-top: 50px;
+  padding-bottom: 39px;
   padding-left: 52px;
   margin-right: 20px;
 
@@ -486,7 +489,7 @@ a.user-basket-red {
 .contacts-tel {
   position: relative;
 
-  height: 45px; 
+  min-height: 45px; 
   margin-top: 46px;
   padding: 9px 0;
   padding-left: 71px;
