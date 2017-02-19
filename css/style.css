@@ -191,7 +191,7 @@ body {
 }
                 /*Верхний блок шапки*/
 .main-header-top {
-	min-height: 42px;
+	height: 42px;
 
   color: #fff;
 
@@ -340,8 +340,8 @@ input[type="search"]::-moz-placeholder {
 
 .userblock li {
   display: inline-block;
-
   width: 150px;
+  min-height: 42px;
     
   vertical-align: top;
 }
@@ -350,7 +350,7 @@ input[type="search"]::-moz-placeholder {
   position: relative;
 
   display: block;
-  
+  min-height: 42px;
   padding: 12px 0;
   padding-left: 30px;
   padding-right: 10px;
