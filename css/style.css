@@ -2353,7 +2353,7 @@ a.catalog-pagination-active:active {
 .footer-menu-top li {
   display: inline-block;
   height: 44px;
-  margin-left: 59px;
+  margin-left: 58px;
 
   vertical-align: top;
 }
@@ -2405,17 +2405,13 @@ a.catalog-pagination-active:active {
 .footer-menu-bottom li {
   display: inline-block;
   height: 44px;
-  margin-left: 59px;
+  margin-left: 58px;
 
   vertical-align: top;
 }
 
-.footer-menu-bottom li:nth-child(4) {
-  margin-left: 57px;
-}
-
 .footer-menu-bottom li:first-child {
-  margin-left: 35px;
+  margin-left: 37px;
 }
 
 .footer-menu-bottom li:last-child {
