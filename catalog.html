@@ -26,11 +26,11 @@
 					</section>
 					<!--Пользовательский блок-->
 					<section class="userblock right">
-					<ul>
-						<li><a href="#" class="user-bookmarks">Закладки:</a></li>
-						<li><a href="#" class="user-basket user-basket-red">Корзина:</a></li>
-						<li><a href="#" class="checkout">Оформить заказ</a></li>
-					</ul>
+						<ul>
+							<li><a href="#" class="user-bookmarks">Закладки: 0</a></li>
+							<li><a href="#" class="user-basket user-basket-red">Корзина: 10</a></li>
+							<li><a href="#" class="checkout">Оформить заказ</a></li>
+						</ul>
 					</section>
 				</div>
 			</section>
@@ -49,35 +49,36 @@
 							+7 (812) 555-05-55
 						</div>
 						<div class="contacts-adress">
-						г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+						г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+						</div>
 					</section>
-					<!--Блок регистрации и авторизации пользователя-->
+					<!--Блок авторизации и  личный кабинет-->
 					<section class="user-login right">
-						<a href="#" class="name">Равшан Джамшутович</a>
-						<a href="#" class="exit">Exit</a>
+						<a href="#" class="user-login-name">Равшан Джамшутович</a>
+						<a href="#" class="user-logout">Exit</a>
 						<div class="personal-area-login">
-							<a href="#" class="my-order">Мои заказы</a>
-							<a href="#" class="personal-area">Личный кабинет</a>
+							<a href="#" class="area-login-my-orders">Мои заказы</a>
+							<a href="#" class="area-login-personal-area">Личный кабинет</a>
 						</div>
 					</section>
 				</div>
 			</section>
 			<div class="container">
-			<!--Нижний блок шапки-->
-			<section class="main-header-bottom">
-				<!--Меню навигации сайта-->
-				<nav class="main-menu">
-					<ul>
-						<li><a href="index.html">Главная</a></li>
-						<li><a href="#">Компания</a></li>
-						<li><a>Каталог</a></li>
-						<li><a href="#">Новости</a></li>
-						<li><a href="#">Спецпредложения</a></li>
-						<li><a href="#">Доставка</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
-				</nav>	
-			</section>
+				<!--Нижний блок шапки-->
+				<section class="main-header-bottom">
+					<!--Меню навигации сайта-->
+					<nav class="main-menu">
+						<ul>
+							<li><a href="index.html">Главная</a></li>
+							<li><a href="#">Компания</a></li>
+							<li><a>Каталог</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Спецпредложения</a></li>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>	
+				</section>
 			</div>	
 		</header>
 		<!--Конец шапки сайта-->
@@ -87,18 +88,18 @@
 				<!--Меню навигации "Хлебные крошки"-->
 				<nav class="breadcrumbs">
 					<ul>
-						<li><a href="index.html" class="home">Home</a></li>
-						<li><a href="#" class="cat">Каталог</a></li>
-						<li><a href="#" class="tool">Инструмент</a></li>
+						<li><a href="#" class="breadcrumbs-home">Home</a></li>
+						<li><a href="#" class="breadcrumbs-cat">Каталог</a></li>
+						<li><a href="#" class="breadcrumbs-tool">Инструмент</a></li>
 						<li>Перфораторы</li>
 					</ul>
 				</nav>
 				<h2 class="drills">Перфораторы</h2>
 				<!--Сайдбар с фильтром каталога-->
 				<section class="catalog-sidebar left">
-				<span class="filter">Фильтр:</span>
+					<span class="sidebar-filter">Фильтр:</span>
 					<form action="https://echo.htmlacademy.ru" class="form-filter">
-						<span class="price">Цена:</span>
+						<span class="sidebar-price">Цена:</span>
 						<section class="range-filters">
 							<div class="range-controls">
 								<div class="scale">
@@ -108,8 +109,8 @@
 								<div class="toggle max-toggle"></div>
 							</div>
 							<div class="price-controls clearfix">
-								<input type="text" class="min-price left" value="0">
-								<input type="text" class="max-price right" value="30000">
+								<div class="price-controls-min-price left"><input type="text" class="min-price" value="0"></div>
+								<div class="price-controls-max-price right"><input type="text" class="max-price" value="30000"></div>
 							</div>
 						</section>
 						<section class="selection-brand">
@@ -129,18 +130,18 @@
 							<li><label><input type="radio" name="power"><span class="radio-indicator"></span>Сетевые</label></li>
 							</ul>
 						</section>
-						<button type="submit">Показать</button>
+						<button type="submit" name="show">Показать</button>
 					</form>
 				</section>
 				<!--Блок сортировки каталога-->
 				<section class="catalog-sorting right">
-					<span class="sorting">Сортировка:</span>			
+					<div class="sorting-name left"><span class="sorting">Сортировка:</span></div>			
 					<ul class="right">
-						<li><a href="#" class="price active">По цене</a></li>
-						<li><a href="#" class="type">По типу</a></li>
-						<li><a href="#" class="functional">По функционалу</a></li>
-						<li><a href="#" class="up">up</a></li>
-						<li><a href="#" class="down">down</a></li>
+						<li><a href="#" class="catalog-sorting-price catalog-sorting-active">По цене</a></li>
+						<li><a href="#" class="catalog-sorting-type">По типу</a></li>
+						<li><a href="#" class="catalog-sorting-functional">По функционалу</a></li>
+						<li><a href="#" class="catalog-sorting-up">up</a></li>
+						<li><a href="#" class="catalog-sorting-down">down</a></li>
 					</ul>
 				</section>
 				<!--Каталог товаров-->
@@ -278,10 +279,10 @@
 				<!--Пагинация каталога-->
 				<section class="catalog-pagination">
 					<ul>
-						<li><a href="#" class="active">1</a></li>
+						<li><a href="#" class="catalog-pagination-active">1</a></li>
 						<li><a href="#">2</a></li>
 						<li><a href="#">3</a></li>
-						<li><a href="#" class="next-page">Следующая</a></li>
+						<li><a href="#" class="catalog-pagination-next-page">Следующая</a></li>
 					</ul>
 				</section>
 			</div>
@@ -292,39 +293,29 @@
 					Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
 				</div>	
 			</section>				
-			<!--Модальное окно: Товар добавлен в корзину-->
-			<section class="items-in-cart">
-				<div class="wrap">
-				<a href="#" class="btn-close">close</a>
-				<p>Товар добавлен в корзину!</p>
-				</div>
-				<div class="cart-control">
-					<div class="wrap-control">
-					<a href="#" class="order">Оформить заказ</a>
-					<a href="#" class="shoping">Продолжить покупки</a>
-					</div>
-				</div>
-			</section>
 		</main>
 		<!--Конец основного блока-->
 		<!--Подвал сайта-->
 		<footer class="main-footer">
 			<!--Верхняя секция подвала-->
 			<section class="footer-top">
-				<div class="container clearfix">
-					<div class="footer-logo left">
-						<a href="index.html">Техномарт</a>
+				<div class="container">
+					<div class="footer-wrap-top clearfix">
+						<div class="footer-logo left">
+							<a href="index.html">Техномарт</a>
+						</div>
+						<!--Меню навигации-->
+						<nav class="footer-menu-top right">
+							<ul>
+								<li><a href="#">Компания</a></li>
+								<li><a href="#">Новости</a></li>
+								<li><a href="#">Каталог</a></li>
+								<li><a href="#">Доставка</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
 					</div>
-					<!--Меню навигации-->
-					<nav class="footer-menu-top right">
-						<ul>
-							<li><a href="#">Компания</a></li>
-							<li><a href="#">Новости</a></li>
-							<li><a href="#">Каталог</a></li>
-							<li><a href="#">Доставка</a></li>
-							<li><a href="#">Контакты</a></li>
-						</ul>
-					</nav>
+					<div class="footer-wrap-bottom clearfix">		
 					<!--Контакты-->
 					<section class="footer-contacts left">
 						<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
@@ -340,6 +331,7 @@
 							<li><a href="#">Спецпредложения</a></li>
 						</ul>
 					</nav>
+					</div>
 				</div>	
 			</section>
 			<!--Нижняя секция подвала-->
@@ -371,6 +363,18 @@
 				</div>	
 			</section>	
 		</footer>
-		<script src="js/script.js"></script>
+		<!--Модальное окно: Товар добавлен в корзину-->
+		<section class="items-in-cart">
+			<div class="wrap">
+				<a href="#" class="items-in-cart-btn-close">close</a>
+				<p>Товар добавлен в корзину!</p>
+			</div>
+			<div class="cart-control">
+				<div class="wrap-control">
+					<a href="#" class="cart-control-order">Оформить заказ</a>
+					<a href="#" class="cart-control-shoping">Продолжить покупки</a>
+				</div>
+			</div>
+		</section>
 	</body>
 </html>

@@ -26,11 +26,11 @@
 					</section>
 					<!--Пользовательский блок-->
 					<section class="userblock right">
-					<ul>
-						<li><a href="#" class="user-bookmarks">Закладки:</a></li>
-						<li><a href="#" class="user-basket">Корзина:</a></li>
-						<li><a href="#" class="checkout">Оформить заказ</a></li>
-					</ul>
+						<ul>
+							<li><a href="#" class="user-bookmarks">Закладки: 0</a></li>
+							<li><a href="#" class="user-basket">Корзина: 0</a></li>
+							<li><a href="#" class="checkout">Оформить заказ</a></li>
+						</ul>
 					</section>
 				</div>
 			</section>
@@ -49,7 +49,8 @@
 							+7 (812) 555-05-55
 						</div>
 						<div class="contacts-adress">
-						г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+						г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+						</div>
 					</section>
 					<!--Блок авторизации и регистрации пользователя-->
 					<section class="user-autorization right">
@@ -59,22 +60,22 @@
 				</div>
 			</section>
 			<div class="container">
-			<!--Нижний блок шапки-->
-			<section class="main-header-bottom">
-				<!--Меню навигации сайта-->
-				<nav class="main-menu">
-					<ul>
-						<li><a>Главная</a></li>
-						<li><a href="#">Компания</a></li>
-						<li><a href="catalog.html">Каталог</a></li>
-						<li><a href="#">Новости</a></li>
-						<li><a href="#">Спецпредложения</a></li>
-						<li><a href="#">Доставка</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
-				</nav>	
-			</section>
-		</div>	
+				<!--Нижний блок шапки-->
+				<section class="main-header-bottom">
+					<!--Меню навигации сайта-->
+					<nav class="main-menu">
+						<ul>
+							<li><a>Главная</a></li>
+							<li><a href="#">Компания</a></li>
+							<li><a href="catalog.html">Каталог</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Спецпредложения</a></li>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>	
+				</section>
+			</div>
 		</header>
 		<!--Конец шапки сайта-->
 		<main>
@@ -96,13 +97,13 @@
 					</section>
 					<section class="slider">
 						<!--Первая картинка слайдера-->
-						<div class="promoblock-item promoblock-item-big">
+						<div class="promoblock-item promoblock-item-big-first">
 							<img src="img/slider-img-1.jpg" width="620" height="266" alt="promo-item-big">
 						</div>
 						<!--Вторая картинка слайдера-->
-						<!--<div class="promoblock-item promoblock-item-big">
-							<img src="img/slider-img-2.jpg" with="620" height="266" alt="promo-item-big">
-						</div>-->
+						<div class="promoblock-item promoblock-item-big-second">
+							<img src="img/slider-img-2.jpg" width="620" height="266" alt="promo-item-big">
+						</div>
 					</section>
 					<section class="promoblock-item">
 						<span>Скидка 50%</span>
@@ -122,8 +123,8 @@
 				<!--Блок "Популярные товары"-->
 				<section class="products-pop clearfix">
 					<section class="products-header clearfix">
-						<h2 class="left">Популярные товары:</h2>
-						<a href="#" class="btn right">Все популярные товары</a>
+						<div class="products-header-head left"><h2>Популярные товары:</h2></div>
+						<div class="products-header-btn right"><a href="#" class="btn">Все популярные товары</a></div>
 					</section>
 					<article class="products-item">
 						<section class="product-action">
@@ -186,18 +187,18 @@
 				<!--Блок "Популярные производители"-->
 				<article class="popular-brand">
 					<div class="brand-header  clearfix">
-						<h2 class="left">Популярные производители:</h2>
-						<a href="#" class="btn right">Все производители</a>
-					</div>
+						<div class="brand-header-head left"><h2>Популярные производители:</h2></div>
+						<div class="brand-header-btn right"><a href="#" class="btn">Все производители</a></div>
+					</div>	
 					<ul>
 						<li><a href="#"><img src="img/bosch.jpg" width="220" height="145" alt="popular-brand"></a></li>
 						<li><a href="#"><img src="img/makita.jpg" width="220" height="145" alt="popular-brand"></a></li>
 						<li><a href="#"><img src="img/dewalt.jpg" width="220" height="145" alt="popular-brand"></a></li>
 						<li><a href="#"><img src="img/interscol.jpg" width="220" height="145" alt="popular-brand"></a></li>
 						<li><a href="#"><img src="img/hitachi.jpg" width="220" height="145" alt="popular-brand"></a></li>
-						<li><a href="#"><img src="img/LG.jpg" width="220" height="145" alt="popular-brand"></a></li>
-						<li><a href="#"><img src="img/AEG.jpg" width="220" height="145" alt="popular-brand"></a></li>
-						<li><a href="#"><img src="img/Metabo.jpg" width="220" height="145" alt="popular-brand"></a></li>
+						<li><a href="#"><img src="img/lg.jpg" width="220" height="145" alt="popular-brand"></a></li>
+						<li><a href="#"><img src="img/aeg.jpg" width="220" height="145" alt="popular-brand"></a></li>
+						<li><a href="#"><img src="img/metabo.jpg" width="220" height="145" alt="popular-brand"></a></li>
 					</ul>
 				</article>
 			</div>	
@@ -212,10 +213,10 @@
 					<!--Галерея Блока "Сервис"-->
 					<section class="services-galery clearfix">
 						<section class="delivery-slide">
-							<ul class="left">
-								<li><a href="#" class="galery-switch action">Доставка</a></li>
-								<li><a href="#" class="galery-switch">Гарантия</a></li>
-								<li><a href="#" class="galery-switch">Кредит</a></li>
+							<ul class="galery-switches left">
+								<li><a href="#" class="action-switch">Доставка</a></li>
+								<li><a href="#">Гарантия</a></li>
+								<li><a href="#">Кредит</a></li>
 							</ul>
 							<section class="delivery left">
 								<h3>Доставка</h3>
@@ -226,10 +227,10 @@
 							</section>	
 						</section>
 						<section class="guarantee-slide">
-							<ul class="left">
-								<li><a href="#" class="galery-switch">Доставка</a></li>
-								<li><a href="#" class="galery-switch action">Гарантия</a></li>
-								<li><a href="#" class="galery-switch">Кредит</a></li>
+							<ul class="galery-switches left">
+								<li><a href="#">Доставка</a></li>
+								<li><a href="#" class="action-switch">Гарантия</a></li>
+								<li><a href="#">Кредит</a></li>
 							</ul>
 							<section class="guarantee left">
 								<h3>Гарантия</h3>
@@ -239,10 +240,10 @@
 							</section>
 						</section>		
 						<section class="credit-slide">
-							<ul class="left">
-								<li><a href="#" class="galery-switch">Доставка</a></li>
-								<li><a href="#" class="galery-switch">Гарантия</a></li>
-								<li><a href="#" class="galery-switch action">Кредит</a></li>
+							<ul class="galery-switches left">
+								<li><a href="#">Доставка</a></li>
+								<li><a href="#">Гарантия</a></li>
+								<li><a href="#" class="action-switch">Кредит</a></li>
 							</ul>
 							<section class="credit left">
 								<h3>Кредит</h3>
@@ -273,32 +274,9 @@
 						<h2>Контакты</h2>
 						<p>Вы можете забрать товар сами,<br>
 						заехав в наш офис:</p>
-						<p><a href="#" class="map"><img src="img/infomation-map.jpg" width="300" height="158" alt="map"></a></p>
+						<p><a href="https://yandex.ru/maps/2/saint-petersburg/?l=map&source=wizgeo&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fll%3D30.323057%2C59.938634%26spn%3D0.001%252C0.001%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2B%25D0%25A1%25D0%25B0%25D0%25BD%25D0%25BA%25D1%2582-%25D0%259F%25D0%25B5%25D1%2582%25D0%25B5%25D1%2580%25D0%25B1%25D1%2583%25D1%2580%25D0%25B3%252C%2B%25D0%2591%25D0%25BE%25D0%25BB%25D1%258C%25D1%2588%25D0%25B0%25D1%258F%2B%25D0%259A%25D0%25BE%25D0%25BD%25D1%258E%25D1%2588%25D0%25B5%25D0%25BD%25D0%25BD%25D0%25B0%25D1%258F%2B%25D1%2583%25D0%25BB%25D0%25B8%25D1%2586%25D0%25B0%252C%2B19%2F8%2B&ll=30.323055%2C59.938631&z=17" class="map"><img src="img/infomation-map.jpg" width="300" height="158" alt="map"></a></p>
 						<a href="#" class="btn">Заблудились? Напишите нам!</a>
 					</section>
-					<!--Модальное окно: Карта-->
-					<div class="modal-content-map">
-	    			<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-	    			<div id="yandex-map"></div>
-	  			</div>
-	  			<div class="modal-content-map-show"></div>
-					<!--Модальное окно: Напишите нам-->
-					<article class="write-us clearfix">
-						<div class="close"><a href="#" class="btn-close">Закрыть</a></div>
-						<form action="https://echo.htmlacademy.ru" method="post">
-							<label class="left">Ваше имя:<br>
-								<input type="text" name="name" placeholder="Представьтесь, пожалуйста">
-							</label>
-							<label class="right">Ваш e-mail:<br>
-								<input type="email" name="email" placeholder="Для отправки ответа">
-							</label><br>
-							<label>Текст письма:<br>
-								<textarea name="letter" placeholder="В свободной форме"></textarea><br>
-							</label>
-							<button type="submit" class="btn">Отправить</button>
-						</form>
-					</article>
-					<div class="write-us-show"></div>
 				</section>
 			</div>	
 		</main>
@@ -307,20 +285,23 @@
 		<footer class="main-footer">
 			<!--Верхняя секция подвала-->
 			<section class="footer-top">
-				<div class="container clearfix">
-					<div class="footer-logo left">
-						<a href="index.html">Техномарт</a>
+				<div class="container">
+					<div class="footer-wrap-top clearfix">
+						<div class="footer-logo left">
+							<a href="index.html">Техномарт</a>
+						</div>
+						<!--Меню навигации-->
+						<nav class="footer-menu-top right">
+							<ul>
+								<li><a href="#">Компания</a></li>
+								<li><a href="#">Новости</a></li>
+								<li><a href="#">Каталог</a></li>
+								<li><a href="#">Доставка</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
 					</div>
-					<!--Меню навигации-->
-					<nav class="footer-menu-top right">
-						<ul>
-							<li><a href="#">Компания</a></li>
-							<li><a href="#">Новости</a></li>
-							<li><a href="#">Каталог</a></li>
-							<li><a href="#">Доставка</a></li>
-							<li><a href="#">Контакты</a></li>
-						</ul>
-					</nav>
+					<div class="footer-wrap-bottom clearfix">		
 					<!--Контакты-->
 					<section class="footer-contacts left">
 						<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
@@ -336,6 +317,7 @@
 							<li><a href="#">Спецпредложения</a></li>
 						</ul>
 					</nav>
+					</div>
 				</div>	
 			</section>
 			<!--Нижняя секция подвала-->
@@ -367,6 +349,27 @@
 				</div>	
 			</section>	
 		</footer>
-		<script src="js/script.js"></script>
+		<!--Модальное окно: Карта-->
+		<div class="modal-content-map">
+			<button class="modal-content-close" type="button">Закрыть</button>
+		</div>
+		<div class="modal-content-map-show"></div>
+		<!--Модальное окно: Напишите нам-->
+		<article class="write-us clearfix">
+			<div class="close"><a href="#" class="write-us-btn-close">Закрыть</a></div>
+			<form action="https://echo.htmlacademy.ru" method="post">
+				<label class="left">Ваше имя:<br>
+					<input type="text" name="name" placeholder="Представьтесь, пожалуйста">
+				</label>
+				<label class="right">Ваш e-mail:<br>
+					<input type="email" name="email" placeholder="Для отправки ответа">
+				</label><br>
+				<label>Текст письма:<br>
+					<textarea name="letter" placeholder="В свободной форме"></textarea><br>
+				</label>
+				<button type="submit" class="btn">Отправить</button>
+			</form>
+		</article>
+		<div class="write-us-show"></div>
 	</body>
 </html>
