@@ -1260,26 +1260,17 @@ button.galery-next {
 } 
 
 .popular-brand li:hover {
-  -webkit-box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
-     -moz-box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
-       -o-box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
-          box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);  
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);  
 }
 
-.popular-brand li:active {
-  -webkit-box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
-     -moz-box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
-       -o-box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
-          box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
+.popular-brand :active {
+  box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
 }
 
 .popular-brand img:active  {
-  -webkit-opacity: 0.3;
-     -moz-opacity: 0.3;
-       -o-opacity: 0.3;
-          opacity: 0.3;  
+  opacity: 0.3; 
 }
-
+         
 .popular-brand img {
   display: block;
 }
@@ -1997,12 +1988,13 @@ input[type="radio"]:disabled {
   background: none;
 }
 
-button.form-btn:active {
-  outline: none;
-}
+.form-btn > span {
+  position: relative;
+  top: 0px;
+  left: 0px;
 
-button.form-btn:focus {
-  outline: none;
+  font: 13px/18px "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
 }
 
 /*===================================================
@@ -2802,6 +2794,10 @@ a.write-us-btn-close::before {
   box-shadow: 0 20px 40px rgba(41, 52, 73, 0.75);
 
   z-index: 99;
+}
+
+.items-in-cart-show {
+  display: block;
 }
 
 .items-in-cart .wrap {
