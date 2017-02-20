@@ -2623,7 +2623,7 @@ a.social-btn:active  {
   left: 2px;
 
   width: 19px;
-  height: 3px;
+  height: 4px;
 
   background-color: #ee3643;
   border-radius: 1px;
@@ -2769,6 +2769,26 @@ a.write-us-btn-close::before {
 
 .write-us-show {
   display: block;
+  animation: animat 0.5s;
+}
+
+.write-us-error {
+  animation: shake 0.5s;
+}
+
+@keyframes animat {
+   0% {transform: translateY(2000px);}
+  20% {transform: translateY(-30px);}
+  40% {transform: translateY(10px);}
+  60% {transform: translateY(-30px);}
+  80% {transform: translateY(10px);}
+ 100% {transform: translateY(0);}
+}
+
+@keyframes shake {
+                 0%, 100% {transform: translateX(0);}
+  10%, 20%, 50%, 70%, 90% {transform: translateX(-10px);}
+       20%, 40%, 60%, 80% {transform: translateX(10px);}
 }
 
 /*===================================================
