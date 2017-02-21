@@ -1,9 +1,10 @@
 body {
-  min-width: 940px;
+  min-width: 960px;
+  padding: 0 10px;
 
   font: 13px/18px "PT Sans", "Arial", sans-serif;
   color: #000;
-
+  
   background: #fff url("../img/body-bg.png");
 }
 
@@ -2170,7 +2171,7 @@ a.catalog-sorting-down:hover::before {
 =====================================================*/
 
 .catalog-pagination {
-  width: 100%;
+  clear: both;
 
   margin-left: 240px;
   margin-bottom: 36px;
