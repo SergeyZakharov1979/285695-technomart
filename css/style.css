@@ -1,6 +1,5 @@
 body {
-  min-width: 960px;
-  padding: 0 10px;
+  min-width: 940px;
 
   font: 13px/18px "PT Sans", "Arial", sans-serif;
   color: #000;
@@ -2310,7 +2309,8 @@ a.catalog-pagination-active:active {
   display: block;
   width: 220px;
   height: 63px;
-  padding: 17px 0;
+  padding-top: 18px;
+  padding-bottom: 15px;
 
   font: 30px/30px "Cuprum", "Arial", sans-serif;
   text-align: center;
