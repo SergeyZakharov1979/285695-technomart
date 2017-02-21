@@ -1263,7 +1263,7 @@ button.galery-next {
   box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);  
 }
 
-.popular-brand :active {
+.popular-brand li:active {
   box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
 }
 
